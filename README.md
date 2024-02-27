@@ -2,11 +2,12 @@
 
 ## Topics of Interst:
 
-> Hemorrhage Control/ Shock
-> Residual lead secondary to GSW
-> Open Abdominal Management/ Laparotomy
-> Crush injuries
-> Mangled Extremities
-> Thoracoabdominal Protocols
-> Burns
+*_Hemorrhage Control/ Shock
+*_Residual lead secondary to GSW
+*_Open Abdominal Management/ Laparotomy
+*_Crush injuries
+*_Mangled Extremities
+*_Thoracoabdominal Protocols
+*_Burns
+
 
