@@ -4,7 +4,7 @@
 
 > Medical Student at Midwestern University Chicago College of Osteopathic Medicine (CCOM)
 
-> Email: Jacob.Canfield@midwestern.edu
+_Email: Jacob.Canfield@midwestern.edu_
 
 ## Topics of Interst:
 
