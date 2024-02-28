@@ -2,7 +2,7 @@
 
 ## Jacob Canfield
 
-$ Medical Student at Midwestern University Chicago College of Osteopathic Medicine (CCOM) $
+> Medical Student at Midwestern University Chicago College of Osteopathic Medicine (CCOM)
 
 > Email: Jacob.Canfield@midwestern.edu
 
