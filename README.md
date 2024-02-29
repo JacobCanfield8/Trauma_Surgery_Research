@@ -6,7 +6,6 @@
 
 Email: _Jacob.Canfield@midwestern.edu_
 
-![Cook County Trauma & Burn Unit](/Users/JakeCanfield/Documents/Trauma_Surgery_Research/Images)
 
 ## Topics of Interst:
 
