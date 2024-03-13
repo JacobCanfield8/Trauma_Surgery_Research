@@ -2,12 +2,16 @@
 
 ## Jacob Canfield
 
+![CCOM](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/CCOM_Seal.jpg/1200px-CCOM_Seal.jpg)
+
 > Medical Student at Midwestern University Chicago College of Osteopathic Medicine (CCOM)
 
 Email: _Jacob.Canfield@midwestern.edu_
 
 
 ## Topics of Interst:
+
+![Cook County Trauma & Burn Unit](https://www.kindpng.com/picc/m/745-7452961_fellows-cook-county-trauma-burn-unit-graphic-design.png)
 
 > Categories as seen in the Eastern Association for the Surgery of Trauma 
 
