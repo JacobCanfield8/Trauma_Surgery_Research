@@ -18,7 +18,7 @@
 
 - Obtain NTDB data
 
-![] (https://www.facs.org/media/pblldi2b/2023-data-dictionary-cover.jpg)
+![NTDB] (https://www.facs.org/media/pblldi2b/2023-data-dictionary-cover.jpg)
 - Analysis of dataset broadly/ demographics/ where data comes from/ datafields available
 - Isolate cases in which Thoracotomy was performed
 - Create graph of age vs. mortality
