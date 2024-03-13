@@ -12,9 +12,13 @@
 - Current guidelines and indications East and West
 - Propose addition of use of age related mortality marker into guidelines
 
+
+
 ## Methods
 
-- Obtain NTDB data 
+- Obtain NTDB data
+
+![] (https://www.facs.org/media/pblldi2b/2023-data-dictionary-cover.jpg?rnd=133069658398070000)
 - Analysis of dataset broadly/ demographics/ where data comes from/ datafields available
 - Isolate cases in which Thoracotomy was performed
 - Create graph of age vs. mortality
