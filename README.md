@@ -9,7 +9,7 @@ Email: _Jacob.Canfield@midwestern.edu_
 
 ## Topics of Interst:
 
-> Catgegories as seen in the Eastern Association for the Surgery of Trauma 
+> Categories as seen in the Eastern Association for the Surgery of Trauma 
 
 - Anterior Abdominal Stab Wounds
 - Bladder Injury
