@@ -34,9 +34,10 @@
 
 > Next, overall mortality and by MOI will be calculated by ages placed into 10 year bins (i.e. ages 51-60). Statistical analysis will be performed to compare each of these age-specific mortality rates to overall mortality rates for respective catgegories. Several methods for establishing age cut-off for which RT will be contraindicated will be explored. Proposed methods of establishing this threshold include but are not limited to: choosing a mortality rate manually (least useful), determining what age group begins to show statistically significant deviation from general mortality rates, determining rates of change in mortality across age groups or performing a regression analysis that minimizes mortality below threshold while simultaneously minimizing denying candidates for RT that would benefit from the procedure above that age range (AUROC?). 
 
-##### SIDE NOTE, COULD BE INTERESTING TO DO CLASSIFICATION MACHINE LEARNING PROJECT THAT  LEVERAGES EAST/WEST GUIDELINES WITH DB TO LEARN MODEL THAT UNNECESSARY MORTALITY AND FURTHER VALIDATES THRESHOLD ESTABLISHED BY THIS PROJECT. LIKELY SEPARATE PROJECT AND UNCLEAR IF FEASIBLE OR IF RELEVANT
-
 > To evaluate this method, the mortality of patients below age threshold will be satistically compared to mortality rates of overall population of cases that underwent RT. Additionally, the mortality above the age threshold will be calculated and statistically compared to population that underwent RT. With the given hypothesis that mortality of RT increases with age and that our established age threshold is valid, we would expect to see that there is an improvement in mortality from RT in cases where the patient is in an age group below the threshold. It would also be expected to see a statistical increase in mortality in the age groups that are above our proposed age threshold. 
+
+**** SIDE NOTE, COULD BE INTERESTING TO DO CLASSIFICATION MACHINE LEARNING PROJECT THAT  LEVERAGES EAST/WEST GUIDELINES WITH DB TO LEARN MODEL THAT UNNECESSARY MORTALITY AND FURTHER VALIDATES THRESHOLD ESTABLISHED BY THIS PROJECT. LIKELY SEPARATE PROJECT AND UNCLEAR IF FEASIBLE OR IF RELEVANT
+
 
 ## References (Bibliography)
 
