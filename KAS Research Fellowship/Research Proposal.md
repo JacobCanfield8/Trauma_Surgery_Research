@@ -57,6 +57,10 @@
 
 ##  Letter of Support written by Research advisor (submitted as single pdf with proposal)
 
+**** INSERT HERE WHEN FINISHED
+
+## Formating guidelines for final document to be submitted
+
      - Name file LASTNAME_FIRSTINITIAL_KAS_PROPOSAL_2024.pdf
 
      - Name of applicant in head and page number in footer
