@@ -36,8 +36,6 @@
 
 > To evaluate this method, the mortality of patients below age threshold will be satistically compared to mortality rates of overall population of cases that underwent RT. Additionally, the mortality above the age threshold will be calculated and statistically compared to population that underwent RT. With the given hypothesis that mortality of RT increases with age and that our established age threshold is valid, we would expect to see that there is an improvement in mortality from RT in cases where the patient is in an age group below the threshold. It would also be expected to see a statistical increase in mortality in the age groups that are above our proposed age threshold. 
 
-**** SIDE NOTE, COULD BE INTERESTING TO DO CLASSIFICATION MACHINE LEARNING PROJECT THAT  LEVERAGES EAST/WEST GUIDELINES WITH DB TO LEARN MODEL THAT UNNECESSARY MORTALITY AND FURTHER VALIDATES THRESHOLD ESTABLISHED BY THIS PROJECT. LIKELY SEPARATE PROJECT AND UNCLEAR IF FEASIBLE OR IF RELEVANT
-
 
 ## References (Bibliography)
 
@@ -57,7 +55,7 @@
 
 ##  Letter of Support written by Research advisor (submitted as single pdf with proposal)
 
-**** INSERT HERE WHEN FINISHED
+> INSERT HERE WHEN FINISHED
 
 ## Formating guidelines for final document to be submitted
 
