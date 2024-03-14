@@ -1,11 +1,11 @@
 # Age Guidelines For Limiting Resuscitation Thoracotomy Mortality
 
 
-## Background
+## Background/ Introduction
 
 - Exploratative/ Resuscitative Thoracotomy is a life saving procedure in trauma setting
     - What is procedure & how is it done
-        - RT is a salvage surgery performed with the goal of locating and controlling exsanguinating bleeding in the thorax. Additionally, access to the heart to correct cardiac tamponade and exploration of the diaphragm to identify diaphragmatic injury (DI) can be accomplished (Mitchell et. al). This requires patient to go under general anesthesia in the operating room (OR). The patient has antiseptic skin preparation applied and is draped. A left mammary anterolateral thoracotomy is made from the sternal margin to the axillary fossa. From this point the incision can be extended to a bilateral thoracotomy, also referred to as a clam-shell thoracotomy, which can be performed when access to right side of thorax or mediastinal structures need to be addressed. 
+        - RT is a damage control surgery performed with the goal of locating and controlling exsanguinating bleeding in the thorax. Additionally, access to the heart to correct cardiac tamponade and exploration of the diaphragm to identify diaphragmatic injury (DI) can be accomplished (Mitchell et. al). This requires patient to go under general anesthesia in the operating room (OR). The patient has antiseptic skin preparation applied and is draped. A left mammary anterolateral thoracotomy is made from the sternal margin to the axillary fossa. From this point the incision can be extended to a bilateral thoracotomy, also referred to as a clam-shell thoracotomy, which can be performed when access to right side of thorax or mediastinal structures need to be addressed. 
     - How effective is it
         - As mentioned by Mitchell et. al, civilian literature indicates a survival rate of 1-2% for blunt traumas and 11-16% for penetrating trauma.
     - Why is it done/ goals/ expectations/ outcomes
@@ -14,7 +14,9 @@
         - 
 - Current guidelines and indications East and West
 - Propose addition of use of age related mortality marker into guidelines
-
+    - At the current time, there is no literature analyzing the relationship between age and mortality as a guideline contraindication for performing RT.
+    
+- Probably need to  discuss what you do if your patient is age-related contraindicated
 
 
 ## Abstract
@@ -26,11 +28,18 @@ Resuscitative Thoracotomy (RT) is a potentially life saving intervention that is
 ## Methods
 
 - Obtain NTDB data
-
 ![NTDB](https://www.facs.org/media/pblldi2b/2023-data-dictionary-cover.jpg)
 - Analysis of dataset broadly/ demographics/ where data comes from/ datafields available
+    - Should explore trends of different fields, bar graphs etc of different types of surgery, incoming vitals, etc
 - Isolate cases in which Thoracotomy was performed
 - Create graph of age vs. mortality
 - Use statistical analysis to determine threshold age for which thoracotomy is no longer recommended
+    - Bin age ranges by 5 year bin and plot histogram
+    - Different methods to set threshold:
+        - Set mortality rate above which mortality is not acceptable
+        - Use mean/median and compare mortality of bins and perform statistical test of difference. age above which mortality increases in statistically significant manner
+        - Look at rate of change of mortality by bins and determine statistical rate of change
 - Explore stratification/ secondary factors in addition to age that may additionally influence mortality threshold
-    - For example, is the threshold same in males and females,
+    - For example, is the threshold same in males and females @ a certain age
+        - Need to explore the data dictionary and look for other unique relationships
+            - example style of graph for exploring this ![](https://seaborn.pydata.org/_images/faceted_histogram.png)
