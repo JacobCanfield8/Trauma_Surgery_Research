@@ -83,3 +83,6 @@
      - Name of applicant in head and page number in footer
 
      - Narrative portion (exclude title page and references) should not exceed 5 pages single spaced
+     
+     
+ ![Cook County Trauma & Burn Unit](https://www.kindpng.com/picc/m/745-7452961_fellows-cook-county-trauma-burn-unit-graphic-design.png)
