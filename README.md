@@ -11,8 +11,6 @@ Email: _Jacob.Canfield@midwestern.edu_
 
 ## Topics of Interset:
 
-![Cook County Trauma & Burn Unit](https://www.kindpng.com/picc/m/745-7452961_fellows-cook-county-trauma-burn-unit-graphic-design.png)
-
 > Categories as seen in the Eastern Association for the Surgery of Trauma 
 
 - Anterior Abdominal Stab Wounds
