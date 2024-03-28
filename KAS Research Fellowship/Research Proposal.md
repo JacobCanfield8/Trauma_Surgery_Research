@@ -43,9 +43,6 @@
     - ROC can provide useful clinical data regarding to specificity and sensitivity of a test or procedure. Establishing cut-off thresholds using ROC are also well established. Due to the complicated nature of trauma surgery it is difficult to establish true positive and false positive rates from data available in the NTDB.
     - Could find patient data for cases with MOI and patient status that could have potentially been warranted RT but for which RT was not performed. 
 
-> Linear Regression (R2)
-    - 
-
 ![Statistics paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082211/#:~:text=The%20most%20common%20criteria%20are,the%20Youden's%20index%20is%20maximum.)
 
 ![Statistics paper 2](https://pdfs.semanticscholar.org/63f2/339da2e7c36bd25f2219886173dd9699f367.pdf)
