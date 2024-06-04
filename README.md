@@ -30,4 +30,4 @@ Email: _Jacob.Canfield@midwestern.edu_
 
 ## Papers Read
 
-![figure](/Users/JakeCanfield/Documents/Trauma_Surgery_Research/Python/papers_read_metrics.png)
+![figure](/Python/papers_read_metrics.png)
