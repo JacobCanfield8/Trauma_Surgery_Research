@@ -1,0 +1,1397 @@
+SEX,EMSSBP,EMSPULSERATE,EMSRESPIRATORYRATE,EMSTOTALGCS,TRAUMATYPE,MECHANISM
+Male,,,,,Blunt,Fall
+Female,140.0,46.0,0.0,3.0,Penetrating,Firearm
+Male,0.0,96.0,15.0,8.0,Penetrating,Firearm
+Male,0.0,44.0,0.0,3.0,Penetrating,Firearm
+Male,102.0,88.0,20.0,15.0,Penetrating,Firearm
+Male,133.0,111.0,20.0,15.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Male,100.0,60.0,20.0,15.0,Blunt,MVT Occupant
+Male,128.0,48.0,16.0,12.0,Blunt,MVT Occupant
+Male,134.0,152.0,40.0,11.0,Blunt,MVT Pedestrian
+Male,175.0,62.0,16.0,3.0,Penetrating,Firearm
+Male,90.0,56.0,10.0,6.0,Blunt,MVT Pedestrian
+Male,48.0,100.0,8.0,4.0,Penetrating,Cut/pierce
+Male,149.0,78.0,14.0,3.0,Blunt,Fall
+Male,96.0,110.0,20.0,13.0,Blunt,"Pedestrian, other"
+Female,,110.0,20.0,14.0,Blunt,"Struck by, against"
+Male,98.0,140.0,32.0,11.0,Penetrating,Firearm
+Male,92.0,166.0,24.0,15.0,Penetrating,Cut/pierce
+Male,110.0,160.0,40.0,13.0,Penetrating,Firearm
+Female,67.0,130.0,28.0,,Penetrating,Firearm
+Male,105.0,100.0,0.0,3.0,Penetrating,Firearm
+Male,127.0,100.0,24.0,15.0,Penetrating,Firearm
+Male,,,,,Blunt,"Pedestrian, other"
+Male,90.0,86.0,28.0,14.0,Penetrating,Firearm
+Male,146.0,142.0,22.0,14.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,68.0,104.0,6.0,3.0,Penetrating,Firearm
+Male,,112.0,20.0,10.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,72.0,98.0,26.0,3.0,Blunt,MVT Occupant
+Female,119.0,103.0,24.0,3.0,Blunt,"Transport, other"
+Male,115.0,120.0,16.0,15.0,Blunt,"Struck by, against"
+Male,,,,,Penetrating,Cut/pierce
+Male,140.0,150.0,24.0,11.0,Penetrating,Firearm
+Male,130.0,120.0,,3.0,Blunt,MVT Pedestrian
+Female,,,,,Penetrating,Firearm
+Female,,,,,Blunt,MVT Occupant
+Male,,135.0,18.0,14.0,Other/unspecified,Other specified and classifiable
+Male,,,,,Blunt,MVT Occupant
+Male,,0.0,0.0,3.0,Penetrating,Firearm
+Female,,98.0,20.0,7.0,Blunt,MVT Occupant
+Male,,,,,Blunt,MVT Occupant
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,80.0,120.0,32.0,15.0,Penetrating,Firearm
+Male,90.0,124.0,4.0,3.0,Penetrating,Firearm
+Male,136.0,82.0,24.0,14.0,Blunt,MVT Occupant
+Male,123.0,110.0,30.0,14.0,Penetrating,Firearm
+Male,0.0,100.0,6.0,3.0,Blunt,MVT Occupant
+Male,110.0,108.0,20.0,15.0,Penetrating,Firearm
+Male,90.0,99.0,24.0,14.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,100.0,160.0,30.0,15.0,Penetrating,Firearm
+Male,,,,,Blunt,Fall
+Male,135.0,76.0,24.0,15.0,Penetrating,Firearm
+Male,77.0,116.0,16.0,15.0,Penetrating,Firearm
+Male,80.0,140.0,30.0,15.0,Penetrating,Firearm
+Male,80.0,80.0,6.0,3.0,Penetrating,Firearm
+Male,,,,,Other/unspecified,Other specified and classifiable
+Male,,120.0,20.0,3.0,Other/unspecified,Other specified and classifiable
+Female,112.0,102.0,26.0,15.0,Other/unspecified,Other specified and classifiable
+Male,,,0.0,3.0,Penetrating,Firearm
+Male,52.0,90.0,16.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Cut/pierce
+Male,80.0,132.0,16.0,15.0,Penetrating,Firearm
+Male,52.0,116.0,8.0,6.0,Blunt,Fall
+Male,131.0,145.0,10.0,15.0,Penetrating,Firearm
+Male,,120.0,8.0,3.0,Penetrating,Cut/pierce
+Male,,,,15.0,Blunt,"Struck by, against"
+Male,70.0,88.0,20.0,14.0,Penetrating,Cut/pierce
+Male,74.0,162.0,14.0,12.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,,,,,Blunt,MVT Occupant
+Male,,145.0,24.0,15.0,Penetrating,Firearm
+Male,100.0,70.0,16.0,15.0,Penetrating,Firearm
+Male,,125.0,24.0,15.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,136.0,136.0,20.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Cut/pierce
+Male,84.0,129.0,31.0,15.0,Penetrating,Firearm
+Female,66.0,132.0,14.0,8.0,Penetrating,Firearm
+Male,60.0,110.0,24.0,12.0,Penetrating,Firearm
+Male,148.0,118.0,18.0,15.0,Penetrating,Cut/pierce
+Male,114.0,80.0,0.0,3.0,Penetrating,Cut/pierce
+Male,98.0,70.0,10.0,3.0,Penetrating,Cut/pierce
+Male,99.0,125.0,20.0,10.0,Penetrating,Firearm
+Male,127.0,77.0,14.0,3.0,Penetrating,Firearm
+Male,113.0,82.0,16.0,15.0,Penetrating,Cut/pierce
+Male,105.0,115.0,20.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,,34.0,,3.0,Penetrating,Firearm
+Male,132.0,104.0,6.0,3.0,Penetrating,Firearm
+Male,0.0,40.0,0.0,3.0,Penetrating,Cut/pierce
+Male,122.0,130.0,30.0,9.0,Penetrating,Firearm
+Male,178.0,155.0,24.0,5.0,Penetrating,Firearm
+Male,106.0,112.0,32.0,3.0,Blunt,Fall
+Female,92.0,67.0,94.0,3.0,Penetrating,Firearm
+Male,93.0,113.0,37.0,14.0,Blunt,"Transport, other"
+Male,,,16.0,3.0,Blunt,MVT Occupant
+Female,70.0,130.0,18.0,15.0,Penetrating,Cut/pierce
+Male,110.0,130.0,42.0,15.0,Penetrating,Firearm
+Female,,,,,Penetrating,Firearm
+Male,148.0,132.0,28.0,8.0,Blunt,MVT Occupant
+Male,177.0,106.0,20.0,15.0,Blunt,MVT Occupant
+Male,,148.0,16.0,14.0,Blunt,Machinery
+Female,114.0,96.0,16.0,15.0,Blunt,MVT Occupant
+Male,118.0,122.0,24.0,15.0,Penetrating,Firearm
+Male,88.0,88.0,16.0,7.0,Blunt,MVT Occupant
+Male,115.0,185.0,14.0,15.0,Blunt,MVT Occupant
+Male,,150.0,24.0,3.0,Penetrating,Firearm
+Male,85.0,116.0,21.0,8.0,Penetrating,Cut/pierce
+Male,88.0,120.0,28.0,10.0,Penetrating,Cut/pierce
+Male,,44.0,4.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,,86.0,28.0,15.0,Penetrating,Firearm
+Male,119.0,89.0,16.0,15.0,Penetrating,Cut/pierce
+Male,,,6.0,3.0,Penetrating,Firearm
+Male,118.0,50.0,0.0,3.0,,
+Male,,,,,,
+Male,144.0,112.0,20.0,,Blunt,Fall
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,114.0,112.0,26.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,90.0,110.0,18.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Other/unspecified,"Other specified, not elsewhere classifiable"
+Male,0.0,0.0,4.0,3.0,Blunt,Fall
+Male,80.0,70.0,4.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Cut/pierce
+Male,92.0,160.0,22.0,15.0,Penetrating,Firearm
+Male,80.0,140.0,26.0,6.0,Penetrating,Cut/pierce
+Male,102.0,106.0,14.0,14.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,104.0,107.0,0.0,3.0,Blunt,MVT Occupant
+Male,133.0,121.0,20.0,13.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,169.0,75.0,20.0,14.0,Penetrating,Cut/pierce
+Male,63.0,120.0,16.0,12.0,Other/unspecified,Other specified and classifiable
+Female,,,,3.0,Blunt,MVT Occupant
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,152.0,110.0,24.0,13.0,Blunt,MVT Pedestrian
+Female,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,0.0,20.0,4.0,3.0,Blunt,MVT Occupant
+Male,,110.0,32.0,15.0,Penetrating,Cut/pierce
+Female,,,,,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,84.0,148.0,28.0,14.0,Penetrating,Cut/pierce
+Female,126.0,140.0,24.0,15.0,Penetrating,Cut/pierce
+Male,91.0,120.0,10.0,3.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Female,128.0,129.0,24.0,4.0,Blunt,"Transport, other"
+Male,130.0,100.0,14.0,3.0,Penetrating,Firearm
+Male,90.0,161.0,26.0,15.0,Penetrating,Firearm
+Male,90.0,122.0,22.0,12.0,Penetrating,Firearm
+Male,102.0,87.0,20.0,15.0,Penetrating,Firearm
+Male,140.0,124.0,24.0,15.0,Penetrating,Firearm
+Female,105.0,120.0,25.0,5.0,Blunt,MVT Occupant
+Male,,86.0,20.0,14.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Motorcyclist
+Female,65.0,70.0,0.0,3.0,Penetrating,Cut/pierce
+Female,,,,,Blunt,Fall
+Male,0.0,32.0,6.0,3.0,Penetrating,Firearm
+Female,122.0,149.0,28.0,15.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,140.0,110.0,30.0,15.0,Penetrating,Firearm
+Male,,,,,Blunt,Fall
+Male,,,,,Penetrating,Firearm
+Male,,,12.0,8.0,Penetrating,Cut/pierce
+Male,,,,3.0,Penetrating,Firearm
+Male,111.0,163.0,28.0,15.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Female,,,,,Blunt,"Struck by, against"
+Male,,,,,Penetrating,Firearm
+Male,46.0,159.0,50.0,6.0,Blunt,MVT Occupant
+Female,91.0,123.0,22.0,10.0,Blunt,MVT Occupant
+Male,85.0,74.0,16.0,15.0,Blunt,MVT Occupant
+Male,70.0,97.0,26.0,15.0,Blunt,MVT Pedestrian
+Female,,,,,Penetrating,Firearm
+Female,,,,,Blunt,MVT Pedestrian
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,78.0,132.0,22.0,15.0,Penetrating,Cut/pierce
+Male,81.0,121.0,10.0,3.0,Blunt,Fall
+Male,91.0,129.0,15.0,3.0,Blunt,MVT Motorcyclist
+Male,,,,,Penetrating,Cut/pierce
+Male,,60.0,0.0,3.0,Penetrating,Cut/pierce
+Male,130.0,130.0,32.0,14.0,Blunt,MVT Motorcyclist
+Male,80.0,0.0,0.0,3.0,Penetrating,Firearm
+Female,130.0,110.0,24.0,14.0,Blunt,MVT Pedestrian
+Male,,,,,Penetrating,Cut/pierce
+Male,,28.0,12.0,3.0,Penetrating,Firearm
+Male,112.0,86.0,12.0,3.0,Blunt,Fall
+Male,108.0,73.0,25.0,12.0,Penetrating,Cut/pierce
+Female,,,,,Blunt,MVT Occupant
+Male,132.0,100.0,20.0,15.0,Penetrating,Firearm
+Male,102.0,128.0,20.0,15.0,Penetrating,Firearm
+Male,153.0,110.0,16.0,15.0,Blunt,Machinery
+Male,87.0,111.0,20.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,,,,,Other/unspecified,Unspecified
+Male,76.0,,22.0,12.0,Penetrating,Firearm
+Male,90.0,0.0,0.0,4.0,Blunt,MVT Occupant
+Male,124.0,80.0,8.0,4.0,Blunt,MVT Occupant
+Male,,,,,Blunt,"Struck by, against"
+Male,200.0,115.0,10.0,3.0,Blunt,MVT Pedestrian
+Male,128.0,122.0,18.0,15.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,71.0,12.0,11.0,Penetrating,Firearm
+Male,137.0,130.0,20.0,11.0,Blunt,MVT Pedestrian
+Male,90.0,,20.0,15.0,Penetrating,Cut/pierce
+Female,,,,,Blunt,Fall
+Male,,,,,Penetrating,Cut/pierce
+Male,,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,110.0,104.0,18.0,14.0,Blunt,"Transport, other"
+Male,,20.0,,3.0,Blunt,MVT Pedal cyclist
+Male,90.0,130.0,22.0,15.0,Penetrating,Firearm
+Female,116.0,79.0,8.0,3.0,Blunt,MVT Motorcyclist
+Male,90.0,126.0,0.0,14.0,Penetrating,Firearm
+Female,121.0,109.0,20.0,15.0,Penetrating,Firearm
+Female,128.0,120.0,32.0,7.0,Penetrating,Firearm
+Female,108.0,135.0,18.0,15.0,Blunt,MVT Occupant
+Female,91.0,122.0,18.0,14.0,Blunt,MVT Occupant
+Male,,,,,Penetrating,Cut/pierce
+Male,120.0,130.0,30.0,15.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,86.0,86.0,12.0,8.0,Blunt,MVT Pedestrian
+Male,130.0,90.0,36.0,11.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Female,72.0,88.0,14.0,14.0,Blunt,MVT Occupant
+Male,95.0,98.0,12.0,3.0,Penetrating,Cut/pierce
+Female,,,,,Blunt,MVT Pedal cyclist
+Male,80.0,111.0,22.0,7.0,Penetrating,Firearm
+Female,119.0,73.0,20.0,15.0,Penetrating,Firearm
+Male,215.0,130.0,20.0,15.0,Penetrating,Firearm
+Male,80.0,160.0,30.0,15.0,Penetrating,Firearm
+Female,0.0,0.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,60.0,128.0,11.0,10.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Female,107.0,120.0,52.0,15.0,Blunt,MVT Pedal cyclist
+Male,0.0,23.0,2.0,3.0,Blunt,Fall
+Female,86.0,128.0,30.0,15.0,Penetrating,Cut/pierce
+Male,,130.0,0.0,3.0,Blunt,MVT Pedal cyclist
+Female,60.0,110.0,6.0,3.0,Blunt,MVT Occupant
+Male,0.0,132.0,6.0,3.0,Blunt,MVT Motorcyclist
+Female,,,,14.0,Blunt,Fall
+Male,90.0,130.0,30.0,8.0,Blunt,MVT Occupant
+Female,110.0,122.0,22.0,15.0,Penetrating,Firearm
+Male,146.0,45.0,24.0,15.0,Blunt,"Transport, other"
+Female,0.0,135.0,30.0,13.0,Penetrating,Firearm
+Male,171.0,129.0,24.0,15.0,Penetrating,Cut/pierce
+Male,91.0,113.0,26.0,14.0,Penetrating,Firearm
+Male,44.0,67.0,12.0,3.0,Blunt,Fall
+Female,,,,,Penetrating,Cut/pierce
+Male,,40.0,,3.0,Penetrating,Firearm
+Male,52.0,40.0,6.0,3.0,Blunt,MVT Motorcyclist
+Male,112.0,122.0,16.0,15.0,Penetrating,Firearm
+Male,73.0,126.0,25.0,9.0,Penetrating,Firearm
+Female,,,,,Penetrating,Firearm
+Male,127.0,108.0,30.0,15.0,Penetrating,Firearm
+Male,107.0,129.0,24.0,15.0,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,129.0,138.0,22.0,15.0,Penetrating,Firearm
+Male,106.0,76.0,22.0,15.0,Blunt,MVT Motorcyclist
+Male,80.0,78.0,10.0,5.0,Penetrating,Firearm
+Male,114.0,141.0,26.0,7.0,Blunt,MVT Occupant
+Male,144.0,144.0,28.0,15.0,Penetrating,Cut/pierce
+Male,0.0,50.0,0.0,3.0,Penetrating,Firearm
+Male,113.0,97.0,,,Blunt,MVT Occupant
+Male,110.0,84.0,20.0,14.0,Penetrating,Firearm
+Male,140.0,144.0,,8.0,Blunt,"Pedestrian, other"
+Male,,140.0,24.0,15.0,Penetrating,Firearm
+Female,60.0,155.0,28.0,12.0,Penetrating,Firearm
+Male,152.0,71.0,28.0,13.0,Penetrating,Firearm
+Male,70.0,74.0,8.0,3.0,Penetrating,Firearm
+Male,98.0,82.0,12.0,13.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,90.0,138.0,22.0,10.0,Penetrating,Firearm
+Male,87.0,160.0,20.0,15.0,Penetrating,Firearm
+Female,,81.0,12.0,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,80.0,24.0,13.0,Penetrating,Firearm
+Male,0.0,30.0,0.0,3.0,Penetrating,Firearm
+Male,90.0,140.0,18.0,10.0,Blunt,MVT Occupant
+Female,147.0,145.0,,15.0,Penetrating,Firearm
+Male,86.0,65.0,30.0,14.0,Other/unspecified,Other specified and classifiable
+Female,,130.0,20.0,15.0,Penetrating,Cut/pierce
+Male,,130.0,30.0,15.0,Penetrating,Firearm
+Male,52.0,46.0,4.0,3.0,Penetrating,Firearm
+Male,64.0,130.0,28.0,15.0,Penetrating,Cut/pierce
+Male,86.0,98.0,30.0,15.0,Penetrating,Cut/pierce
+Male,0.0,120.0,16.0,3.0,Penetrating,Firearm
+Male,80.0,160.0,26.0,15.0,Penetrating,Firearm
+Male,131.0,106.0,30.0,12.0,Blunt,MVT Pedestrian
+Male,,,,,Penetrating,Firearm
+Male,118.0,68.0,20.0,15.0,Penetrating,Cut/pierce
+Male,134.0,95.0,20.0,14.0,Blunt,MVT Occupant
+Male,137.0,112.0,20.0,15.0,Blunt,MVT Motorcyclist
+Male,57.0,101.0,6.0,3.0,Blunt,MVT Occupant
+Male,,120.0,20.0,10.0,Blunt,"Struck by, against"
+Male,,130.0,10.0,3.0,Penetrating,Firearm
+Male,120.0,97.0,18.0,15.0,Blunt,Fall
+Male,,,,,Penetrating,Firearm
+Male,120.0,180.0,30.0,15.0,Penetrating,Firearm
+Male,80.0,80.0,4.0,3.0,Penetrating,Firearm
+Female,60.0,60.0,,10.0,Blunt,Fall
+Male,,,,,Blunt,MVT Motorcyclist
+Male,135.0,30.0,0.0,3.0,Penetrating,Firearm
+Male,90.0,150.0,40.0,15.0,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,59.0,125.0,24.0,15.0,Penetrating,Cut/pierce
+Female,,,,,Penetrating,Firearm
+Male,90.0,60.0,12.0,3.0,Blunt,MVT Occupant
+Female,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,0.0,117.0,28.0,13.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,101.0,69.0,20.0,13.0,Blunt,MVT Motorcyclist
+Male,136.0,97.0,24.0,15.0,Penetrating,Firearm
+Male,,,24.0,6.0,Penetrating,Cut/pierce
+Male,66.0,137.0,12.0,13.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,98.0,108.0,18.0,15.0,Penetrating,Firearm
+Male,81.0,56.0,12.0,14.0,Penetrating,Firearm
+Male,,,,3.0,Penetrating,Cut/pierce
+Male,100.0,114.0,26.0,15.0,Blunt,MVT Motorcyclist
+Male,,,,,Blunt,Fall
+Male,,110.0,8.0,3.0,Penetrating,Cut/pierce
+Male,80.0,140.0,20.0,9.0,Penetrating,Firearm
+Male,,,,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,123.0,93.0,20.0,14.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,78.0,62.0,10.0,14.0,Penetrating,Firearm
+Female,180.0,72.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,,96.0,24.0,15.0,Penetrating,Firearm
+Male,137.0,70.0,,3.0,Penetrating,Firearm
+Male,,,,,Blunt,Fall
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,88.0,105.0,,3.0,Blunt,MVT Occupant
+Male,104.0,72.0,,3.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Pedestrian
+Female,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,205.0,70.0,18.0,14.0,Penetrating,Firearm
+Male,96.0,120.0,26.0,14.0,Penetrating,Cut/pierce
+Male,140.0,130.0,,3.0,Penetrating,Firearm
+Male,100.0,97.0,,3.0,Penetrating,Firearm
+Male,74.0,100.0,28.0,12.0,Blunt,MVT Motorcyclist
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,92.0,97.0,23.0,3.0,Blunt,MVT Motorcyclist
+Male,0.0,72.0,16.0,12.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Male,124.0,110.0,24.0,14.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Female,,,,,Blunt,MVT Motorcyclist
+Male,60.0,150.0,20.0,15.0,Blunt,MVT Occupant
+Male,142.0,180.0,36.0,9.0,Blunt,MVT Occupant
+Male,122.0,122.0,20.0,,Penetrating,Firearm
+Female,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,100.0,78.0,22.0,15.0,Penetrating,Firearm
+Male,,134.0,28.0,15.0,Penetrating,Firearm
+Male,90.0,120.0,20.0,15.0,Penetrating,Firearm
+Male,0.0,110.0,0.0,3.0,Penetrating,Cut/pierce
+Female,80.0,90.0,22.0,15.0,Penetrating,Firearm
+Male,108.0,122.0,22.0,15.0,Penetrating,Firearm
+Male,83.0,152.0,26.0,15.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Blunt,MVT Motorcyclist
+Male,,49.0,16.0,3.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Male,94.0,134.0,20.0,11.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,135.0,134.0,12.0,7.0,Penetrating,Cut/pierce
+Male,100.0,66.0,36.0,14.0,Blunt,MVT Occupant
+Male,,116.0,20.0,15.0,Blunt,MVT Motorcyclist
+Male,,40.0,0.0,3.0,Blunt,MVT Motorcyclist
+Male,0.0,0.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,110.0,144.0,24.0,3.0,Blunt,MVT Motorcyclist
+Male,90.0,130.0,46.0,15.0,Blunt,MVT Occupant
+Male,0.0,60.0,6.0,3.0,Penetrating,Cut/pierce
+Male,94.0,122.0,14.0,15.0,Penetrating,Firearm
+Female,60.0,133.0,29.0,3.0,Blunt,MVT Pedestrian
+Male,109.0,85.0,10.0,3.0,Blunt,MVT Pedestrian
+Male,142.0,85.0,12.0,3.0,Penetrating,Firearm
+Male,113.0,42.0,8.0,3.0,Blunt,Fall
+Male,63.0,55.0,30.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Cut/pierce
+Male,150.0,60.0,,7.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,,76.0,0.0,3.0,Penetrating,Firearm
+Male,,92.0,0.0,3.0,Penetrating,Firearm
+Male,,,,14.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Pedestrian
+Male,138.0,136.0,20.0,15.0,Blunt,MVT Occupant
+Female,,,,,Blunt,MVT Occupant
+Male,,120.0,24.0,15.0,Penetrating,Cut/pierce
+Male,50.0,54.0,4.0,3.0,,
+Male,0.0,94.0,0.0,3.0,,
+Male,84.0,120.0,4.0,3.0,Blunt,MVT Pedestrian
+Male,,,,,,
+Male,,,,,Penetrating,Firearm
+Male,192.0,90.0,22.0,15.0,Penetrating,Firearm
+Male,,110.0,6.0,3.0,Penetrating,Firearm
+Female,80.0,144.0,0.0,6.0,Penetrating,Firearm
+Male,98.0,103.0,16.0,13.0,Penetrating,Firearm
+Female,175.0,110.0,16.0,10.0,Blunt,MVT Occupant
+Male,122.0,72.0,16.0,8.0,Blunt,MVT Occupant
+Male,92.0,119.0,24.0,14.0,Other/unspecified,Other specified and classifiable
+Male,80.0,112.0,28.0,15.0,Blunt,MVT Occupant
+Female,,,,,Blunt,Fall
+Male,102.0,115.0,,8.0,Penetrating,Firearm
+Male,122.0,110.0,,8.0,Blunt,Fall
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,139.0,112.0,24.0,14.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Female,0.0,0.0,0.0,3.0,Blunt,MVT Pedestrian
+Female,,,,,Blunt,MVT Occupant
+Male,78.0,71.0,12.0,10.0,Penetrating,Cut/pierce
+Female,,0.0,0.0,3.0,Penetrating,Firearm
+Male,130.0,80.0,15.0,15.0,Penetrating,Cut/pierce
+Male,81.0,104.0,20.0,14.0,Penetrating,Firearm
+Male,153.0,76.0,8.0,3.0,Penetrating,Firearm
+Male,0.0,0.0,8.0,3.0,Penetrating,Cut/pierce
+Male,124.0,106.0,20.0,15.0,,
+Male,110.0,105.0,12.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Blunt,"Pedestrian, other"
+Male,77.0,110.0,24.0,15.0,Penetrating,Firearm
+Male,107.0,120.0,24.0,15.0,Penetrating,Cut/pierce
+Male,123.0,88.0,24.0,10.0,Blunt,Fall
+Female,,130.0,22.0,10.0,Penetrating,Cut/pierce
+Male,100.0,110.0,22.0,15.0,Blunt,MVT Pedestrian
+Male,152.0,120.0,30.0,14.0,Penetrating,Cut/pierce
+Male,200.0,102.0,6.0,3.0,Blunt,MVT Occupant
+Male,112.0,110.0,16.0,15.0,Penetrating,Firearm
+Male,132.0,100.0,20.0,15.0,Penetrating,Firearm
+Male,122.0,97.0,,15.0,Penetrating,Firearm
+Male,60.0,135.0,20.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,112.0,100.0,20.0,9.0,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Male,,116.0,34.0,3.0,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,158.0,100.0,12.0,3.0,Blunt,MVT Motorcyclist
+Male,,,,,Penetrating,Firearm
+Female,,,,,Blunt,MVT Pedestrian
+Male,205.0,90.0,8.0,6.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,50.0,145.0,12.0,6.0,Blunt,Fall
+Female,100.0,90.0,20.0,8.0,Blunt,MVT Occupant
+Female,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,150.0,142.0,12.0,3.0,Blunt,MVT Pedestrian
+Female,88.0,60.0,10.0,6.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,110.0,102.0,20.0,14.0,Blunt,MVT Occupant
+Male,145.0,73.0,25.0,8.0,Penetrating,Firearm
+Male,91.0,136.0,22.0,15.0,Penetrating,Firearm
+Female,0.0,0.0,0.0,3.0,Blunt,"Pedestrian, other"
+Male,111.0,160.0,10.0,3.0,Penetrating,Cut/pierce
+Male,,166.0,26.0,14.0,Penetrating,Firearm
+Female,60.0,50.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Blunt,Fall
+Female,132.0,120.0,20.0,14.0,Blunt,MVT Occupant
+Male,96.0,110.0,22.0,10.0,Penetrating,Firearm
+Male,124.0,112.0,14.0,7.0,Penetrating,Firearm
+Female,,,,,Penetrating,Firearm
+Male,117.0,92.0,13.0,8.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Cut/pierce
+Male,136.0,110.0,30.0,14.0,Penetrating,Firearm
+Male,130.0,110.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,102.0,110.0,18.0,15.0,Penetrating,Firearm
+Male,90.0,165.0,36.0,10.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,92.0,77.0,26.0,11.0,Penetrating,Cut/pierce
+Male,,130.0,18.0,15.0,Blunt,"Struck by, against"
+Male,138.0,100.0,20.0,3.0,Blunt,MVT Motorcyclist
+Male,210.0,180.0,24.0,15.0,Blunt,MVT Occupant
+Male,178.0,70.0,12.0,3.0,Blunt,MVT Motorcyclist
+Male,102.0,135.0,26.0,15.0,Penetrating,Firearm
+Male,,147.0,10.0,,Blunt,MVT Motorcyclist
+Male,,,,,Blunt,MVT Occupant
+Male,122.0,116.0,16.0,3.0,Penetrating,Firearm
+Female,132.0,110.0,25.0,15.0,Penetrating,Cut/pierce
+Male,130.0,130.0,18.0,15.0,Penetrating,Cut/pierce
+Female,101.0,90.0,15.0,3.0,Blunt,MVT Occupant
+Male,150.0,158.0,24.0,15.0,Penetrating,Firearm
+Male,74.0,84.0,22.0,11.0,Penetrating,Cut/pierce
+Male,,52.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,106.0,128.0,20.0,15.0,Blunt,MVT Motorcyclist
+Male,130.0,96.0,10.0,5.0,Penetrating,Firearm
+Male,0.0,126.0,22.0,8.0,Penetrating,Cut/pierce
+Male,70.0,156.0,20.0,13.0,Blunt,MVT Occupant
+Male,110.0,110.0,10.0,3.0,Blunt,MVT Motorcyclist
+Female,90.0,120.0,30.0,15.0,Blunt,MVT Pedestrian
+Female,0.0,0.0,0.0,3.0,Blunt,MVT Occupant
+Male,100.0,90.0,20.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Blunt,Fall
+Male,108.0,120.0,28.0,10.0,Penetrating,Firearm
+Male,108.0,88.0,0.0,3.0,Blunt,MVT Motorcyclist
+Male,110.0,80.0,12.0,4.0,Blunt,MVT Occupant
+Male,,80.0,8.0,3.0,Blunt,MVT Pedestrian
+Female,,39.0,10.0,3.0,Penetrating,Firearm
+Female,150.0,120.0,10.0,3.0,Blunt,MVT Occupant
+Male,55.0,97.0,12.0,9.0,Blunt,MVT Occupant
+Male,80.0,78.0,20.0,8.0,Blunt,MVT Occupant
+Male,,,,,Blunt,Fall
+Male,149.0,64.0,20.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Female,84.0,51.0,26.0,12.0,Blunt,MVT Occupant
+Male,84.0,100.0,8.0,3.0,Blunt,MVT Pedestrian
+Female,150.0,110.0,16.0,15.0,Blunt,MVT Occupant
+Male,0.0,0.0,4.0,3.0,Penetrating,Firearm
+Male,100.0,150.0,40.0,15.0,Penetrating,Firearm
+Male,,120.0,26.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,,46.0,14.0,7.0,Penetrating,Firearm
+Male,147.0,118.0,0.0,3.0,Blunt,MVT Occupant
+Male,100.0,100.0,28.0,11.0,Penetrating,Firearm
+Male,80.0,120.0,24.0,14.0,Blunt,MVT Pedestrian
+Male,156.0,115.0,0.0,3.0,Blunt,MVT Occupant
+Male,70.0,120.0,6.0,6.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,112.0,106.0,34.0,,Blunt,Fall
+Male,100.0,93.0,20.0,13.0,Penetrating,Cut/pierce
+Male,182.0,112.0,22.0,,Blunt,Fall
+Female,130.0,100.0,24.0,14.0,Blunt,MVT Occupant
+Female,108.0,86.0,30.0,13.0,Other/unspecified,Unspecified
+Male,183.0,60.0,0.0,3.0,Blunt,MVT Occupant
+Male,43.0,90.0,20.0,12.0,Penetrating,Firearm
+Female,54.0,130.0,32.0,14.0,Blunt,MVT Occupant
+Male,126.0,125.0,14.0,14.0,Penetrating,Firearm
+Male,107.0,80.0,10.0,15.0,Blunt,"Struck by, against"
+Male,93.0,114.0,17.0,3.0,Penetrating,Cut/pierce
+Male,80.0,77.0,24.0,14.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,144.0,136.0,28.0,10.0,Blunt,MVT Pedestrian
+Female,105.0,40.0,,3.0,Blunt,MVT Occupant
+Male,56.0,64.0,4.0,6.0,Penetrating,Firearm
+Male,130.0,126.0,22.0,14.0,Blunt,MVT Motorcyclist
+Male,93.0,45.0,10.0,3.0,Blunt,MVT Motorcyclist
+Male,0.0,60.0,8.0,3.0,Penetrating,Firearm
+Male,,,,,Blunt,"Struck by, against"
+Male,64.0,110.0,20.0,12.0,Blunt,MVT Pedal cyclist
+Female,110.0,118.0,8.0,3.0,Blunt,MVT Occupant
+Male,100.0,110.0,18.0,15.0,Penetrating,Firearm
+Male,,0.0,,3.0,Penetrating,Firearm
+Male,90.0,112.0,20.0,13.0,Blunt,MVT Pedestrian
+Male,86.0,77.0,,3.0,Blunt,Fall
+Female,135.0,109.0,32.0,14.0,Blunt,MVT Motorcyclist
+Male,130.0,104.0,20.0,15.0,Blunt,Fall
+Male,100.0,110.0,28.0,15.0,Blunt,MVT Occupant
+Female,,,,,Blunt,MVT Pedestrian
+Male,107.0,92.0,28.0,,Blunt,MVT Occupant
+Male,,,,,Penetrating,Cut/pierce
+Female,,,,,Blunt,"Transport, other"
+Male,,140.0,10.0,6.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Female,,,,3.0,Penetrating,Firearm
+Female,,128.0,24.0,10.0,Penetrating,Firearm
+Male,,112.0,26.0,13.0,Penetrating,Cut/pierce
+Female,80.0,,22.0,14.0,Blunt,MVT Occupant
+Female,75.0,120.0,6.0,3.0,Blunt,MVT Pedestrian
+Male,55.0,81.0,22.0,6.0,Blunt,MVT Motorcyclist
+Male,80.0,76.0,22.0,15.0,Penetrating,Firearm
+Male,0.0,0.0,8.0,3.0,Penetrating,Firearm
+Male,138.0,109.0,18.0,11.0,Blunt,MVT Occupant
+Male,50.0,80.0,12.0,3.0,Blunt,MVT Pedestrian
+Male,85.0,66.0,8.0,6.0,Penetrating,Cut/pierce
+Female,,,6.0,3.0,Penetrating,Firearm
+Male,,86.0,18.0,11.0,Penetrating,Firearm
+Male,88.0,152.0,26.0,15.0,Penetrating,Firearm
+Female,78.0,119.0,40.0,14.0,Penetrating,Firearm
+Male,,60.0,8.0,6.0,Penetrating,Firearm
+Female,79.0,105.0,,7.0,Penetrating,Firearm
+Male,90.0,64.0,,3.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Female,,,,,Blunt,Fall
+Male,,,,,Blunt,MVT Occupant
+Female,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Female,99.0,142.0,26.0,14.0,Blunt,MVT Occupant
+Female,84.0,56.0,6.0,3.0,Penetrating,Firearm
+Male,0.0,0.0,,3.0,Penetrating,Firearm
+Male,,,,3.0,Penetrating,Firearm
+Male,88.0,105.0,36.0,4.0,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,,Blunt,Fall
+Male,80.0,90.0,12.0,3.0,Penetrating,Firearm
+Male,128.0,115.0,18.0,15.0,Blunt,"Transport, other"
+Male,126.0,80.0,16.0,15.0,Penetrating,Firearm
+Male,153.0,110.0,16.0,10.0,Blunt,MVT Occupant
+Male,146.0,133.0,8.0,3.0,Blunt,MVT Pedestrian
+Male,40.0,91.0,16.0,15.0,Penetrating,Firearm
+Male,92.0,122.0,16.0,15.0,Penetrating,Firearm
+Male,144.0,140.0,3.0,3.0,Blunt,MVT Motorcyclist
+Male,55.0,170.0,22.0,15.0,Blunt,MVT Occupant
+Male,87.0,156.0,16.0,8.0,Blunt,MVT Pedestrian
+Male,99.0,75.0,0.0,3.0,Blunt,MVT Motorcyclist
+Male,100.0,120.0,24.0,13.0,Penetrating,Firearm
+Male,,130.0,23.0,15.0,Penetrating,Firearm
+Male,103.0,156.0,36.0,10.0,Blunt,MVT Motorcyclist
+Female,146.0,60.0,14.0,3.0,Penetrating,Firearm
+Male,50.0,116.0,16.0,9.0,Penetrating,Firearm
+Male,11.0,148.0,18.0,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,79.0,81.0,20.0,3.0,Blunt,Fall
+Male,99.0,120.0,26.0,14.0,Blunt,MVT Occupant
+Male,130.0,130.0,30.0,14.0,Penetrating,Cut/pierce
+Male,151.0,129.0,23.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Blunt,MVT Pedestrian
+Male,,,,,Blunt,Fall
+Male,,,,,Blunt,"Struck by, against"
+Male,109.0,110.0,16.0,15.0,Blunt,MVT Occupant
+Male,108.0,128.0,18.0,15.0,Penetrating,Cut/pierce
+Male,94.0,103.0,8.0,3.0,Blunt,MVT Motorcyclist
+Male,,,,3.0,Blunt,MVT Pedestrian
+Male,148.0,130.0,,3.0,Blunt,MVT Occupant
+Male,,,,10.0,Blunt,MVT Motorcyclist
+Male,96.0,86.0,20.0,3.0,Blunt,Fall
+Female,,,,,Penetrating,Cut/pierce
+Female,,,,,Penetrating,Firearm
+Female,150.0,148.0,36.0,14.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,70.0,40.0,4.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,118.0,20.0,11.0,Penetrating,Firearm
+Male,146.0,146.0,10.0,10.0,Penetrating,Firearm
+Male,124.0,112.0,24.0,15.0,Penetrating,Firearm
+Female,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,158.0,107.0,12.0,4.0,Penetrating,Firearm
+Male,123.0,122.0,22.0,15.0,Blunt,MVT Occupant
+Male,130.0,92.0,18.0,15.0,Penetrating,Cut/pierce
+Male,60.0,60.0,4.0,3.0,Penetrating,Firearm
+Male,206.0,77.0,18.0,13.0,Blunt,MVT Motorcyclist
+Male,100.0,150.0,24.0,12.0,Penetrating,Firearm
+Male,90.0,132.0,20.0,14.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,107.0,148.0,18.0,12.0,Penetrating,Firearm
+Male,137.0,93.0,22.0,15.0,Penetrating,Firearm
+Male,,,,14.0,Penetrating,Firearm
+Male,80.0,124.0,10.0,4.0,Penetrating,Firearm
+Male,0.0,0.0,10.0,3.0,Penetrating,Firearm
+Male,95.0,128.0,6.0,3.0,Blunt,Fall
+Male,97.0,140.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,48.0,47.0,10.0,3.0,Blunt,MVT Motorcyclist
+Male,,,,9.0,Blunt,Fall
+Male,,,,3.0,Penetrating,Firearm
+Male,60.0,130.0,22.0,15.0,Penetrating,Cut/pierce
+Male,78.0,120.0,16.0,10.0,Penetrating,Cut/pierce
+Male,0.0,0.0,,15.0,Penetrating,Firearm
+Male,118.0,100.0,20.0,15.0,Blunt,MVT Pedestrian
+Female,,40.0,0.0,3.0,Penetrating,Cut/pierce
+Male,90.0,110.0,12.0,8.0,Blunt,MVT Motorcyclist
+Male,0.0,62.0,0.0,10.0,Penetrating,Cut/pierce
+Male,70.0,68.0,12.0,3.0,Penetrating,Firearm
+Male,140.0,114.0,20.0,,Blunt,MVT Pedal cyclist
+Male,,,,,Penetrating,Firearm
+Male,96.0,180.0,16.0,3.0,Blunt,MVT Occupant
+Male,,84.0,12.0,10.0,Penetrating,Firearm
+Male,,90.0,,3.0,Blunt,MVT Pedal cyclist
+Male,122.0,50.0,24.0,14.0,Penetrating,Firearm
+Male,124.0,140.0,28.0,15.0,Penetrating,Cut/pierce
+Male,56.0,22.0,0.0,15.0,Blunt,MVT Pedestrian
+Female,98.0,169.0,10.0,3.0,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,,Blunt,MVT Motorcyclist
+Male,99.0,61.0,18.0,15.0,Penetrating,Firearm
+Male,99.0,106.0,28.0,13.0,Penetrating,Firearm
+Male,186.0,66.0,37.0,12.0,Penetrating,Cut/pierce
+Male,181.0,117.0,0.0,3.0,Blunt,Fall
+Male,178.0,100.0,18.0,15.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,140.0,138.0,28.0,15.0,Penetrating,Firearm
+Female,134.0,109.0,16.0,15.0,Penetrating,Firearm
+Female,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,132.0,120.0,20.0,15.0,Penetrating,Firearm
+Male,90.0,97.0,16.0,8.0,Blunt,MVT Occupant
+Male,92.0,102.0,22.0,14.0,Penetrating,Firearm
+Male,121.0,148.0,40.0,3.0,Blunt,MVT Motorcyclist
+Male,40.0,92.0,10.0,13.0,Penetrating,Cut/pierce
+Male,100.0,100.0,8.0,5.0,Blunt,MVT Pedal cyclist
+Male,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,118.0,83.0,16.0,,Penetrating,Firearm
+Male,0.0,110.0,8.0,3.0,Penetrating,Firearm
+Male,70.0,126.0,26.0,15.0,,
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,68.0,119.0,,3.0,Blunt,MVT Occupant
+Male,,117.0,0.0,3.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Blunt,Fall
+Male,91.0,132.0,30.0,15.0,Blunt,MVT Occupant
+Male,,,20.0,,Blunt,MVT Occupant
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Female,0.0,68.0,0.0,3.0,Penetrating,Cut/pierce
+Male,112.0,125.0,26.0,15.0,Penetrating,Firearm
+Male,152.0,136.0,14.0,3.0,Blunt,MVT Motorcyclist
+Male,42.0,120.0,10.0,3.0,Blunt,MVT Pedestrian
+Female,,96.0,14.0,,Penetrating,Cut/pierce
+Male,93.0,91.0,0.0,3.0,Blunt,MVT Motorcyclist
+Male,,,,15.0,Penetrating,Firearm
+Male,,96.0,,3.0,Penetrating,Firearm
+Male,96.0,139.0,0.0,3.0,Blunt,MVT Motorcyclist
+Male,,,,,Penetrating,Firearm
+Male,0.0,48.0,0.0,3.0,Penetrating,Firearm
+Male,,105.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Motorcyclist
+Male,120.0,,20.0,14.0,Penetrating,Firearm
+Male,,116.0,14.0,3.0,Penetrating,Cut/pierce
+Male,110.0,70.0,6.0,3.0,Penetrating,Firearm
+Male,130.0,120.0,10.0,15.0,Blunt,MVT Motorcyclist
+Male,,,,,Penetrating,Firearm
+Male,100.0,171.0,36.0,15.0,Penetrating,Cut/pierce
+Male,165.0,118.0,30.0,14.0,Penetrating,Firearm
+Female,0.0,0.0,1.0,3.0,Penetrating,Firearm
+Male,98.0,112.0,26.0,15.0,Penetrating,Cut/pierce
+Male,145.0,33.0,0.0,6.0,Penetrating,Firearm
+Male,179.0,30.0,,3.0,Penetrating,Firearm
+Male,83.0,130.0,16.0,,Penetrating,Cut/pierce
+Male,,,,,Blunt,MVT Pedestrian
+Male,132.0,110.0,0.0,3.0,Blunt,MVT Motorcyclist
+Female,,128.0,4.0,3.0,Blunt,MVT Pedal cyclist
+Male,0.0,40.0,0.0,3.0,Blunt,MVT Pedal cyclist
+Female,0.0,0.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,60.0,60.0,,3.0,Blunt,MVT Occupant
+Female,0.0,60.0,6.0,3.0,Blunt,MVT Occupant
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,,134.0,0.0,3.0,Blunt,MVT Motorcyclist
+Male,,100.0,18.0,15.0,Penetrating,Cut/pierce
+Female,48.0,130.0,20.0,13.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,90.0,60.0,26.0,15.0,Penetrating,Cut/pierce
+Male,75.0,122.0,32.0,15.0,Penetrating,Firearm
+Male,78.0,120.0,8.0,9.0,Penetrating,Firearm
+Male,0.0,96.0,24.0,15.0,Penetrating,Firearm
+Male,100.0,68.0,,,Blunt,MVT Motorcyclist
+Male,,120.0,4.0,3.0,Penetrating,Firearm
+Male,64.0,128.0,28.0,15.0,Penetrating,Firearm
+Male,140.0,76.0,8.0,5.0,Blunt,MVT Occupant
+Male,,120.0,30.0,14.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Female,110.0,133.0,0.0,3.0,Blunt,MVT Occupant
+Male,108.0,98.0,18.0,15.0,Penetrating,Cut/pierce
+Male,115.0,145.0,32.0,15.0,Blunt,MVT Occupant
+Male,149.0,72.0,0.0,3.0,Penetrating,Firearm
+Male,105.0,121.0,30.0,15.0,Penetrating,Cut/pierce
+Male,88.0,136.0,20.0,13.0,Penetrating,Firearm
+Male,,110.0,18.0,15.0,,
+Male,80.0,130.0,28.0,14.0,Penetrating,Firearm
+Male,,150.0,24.0,15.0,Penetrating,Firearm
+Male,130.0,76.0,20.0,9.0,Blunt,MVT Occupant
+Male,0.0,40.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,,131.0,22.0,15.0,Penetrating,Firearm
+Male,104.0,140.0,20.0,12.0,Penetrating,Firearm
+Male,106.0,60.0,0.0,3.0,,
+Male,80.0,164.0,32.0,7.0,Blunt,MVT Occupant
+Male,179.0,136.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,93.0,100.0,42.0,15.0,Blunt,"Transport, other"
+Male,153.0,111.0,19.0,3.0,Penetrating,Firearm
+Male,64.0,124.0,42.0,15.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,80.0,106.0,22.0,15.0,Blunt,Fall
+Male,,69.0,24.0,3.0,Penetrating,Firearm
+Male,,38.0,4.0,3.0,Penetrating,Firearm
+Male,40.0,40.0,17.0,3.0,Penetrating,Firearm
+Male,151.0,108.0,38.0,3.0,Penetrating,Firearm
+Male,142.0,80.0,18.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,159.0,56.0,4.0,3.0,Penetrating,Firearm
+Male,91.0,152.0,14.0,,Penetrating,Cut/pierce
+Male,,46.0,8.0,3.0,Penetrating,Firearm
+Male,,54.0,12.0,3.0,Penetrating,Cut/pierce
+Male,104.0,87.0,,,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,102.0,96.0,28.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,89.0,130.0,4.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,124.0,107.0,18.0,14.0,Blunt,MVT Occupant
+Male,69.0,102.0,22.0,14.0,Blunt,MVT Pedestrian
+Male,136.0,147.0,22.0,14.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Cut/pierce
+Male,0.0,0.0,73.0,3.0,Penetrating,Firearm
+Female,130.0,104.0,16.0,3.0,Blunt,MVT Occupant
+Female,,,,,Blunt,MVT Occupant
+Male,,,,,Blunt,MVT Pedestrian
+Male,155.0,131.0,43.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Blunt,MVT Motorcyclist
+Male,,92.0,,,Blunt,MVT Pedestrian
+Male,0.0,0.0,0.0,3.0,Blunt,MVT Occupant
+Male,0.0,0.0,0.0,3.0,Blunt,Fall
+Male,110.0,124.0,8.0,3.0,Blunt,MVT Motorcyclist
+Male,100.0,120.0,8.0,6.0,Blunt,MVT Pedestrian
+Male,103.0,124.0,40.0,8.0,Blunt,MVT Motorcyclist
+Male,132.0,133.0,25.0,15.0,Penetrating,Cut/pierce
+Male,,110.0,10.0,3.0,Blunt,MVT Pedestrian
+Male,70.0,148.0,16.0,9.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Motorcyclist
+Male,136.0,110.0,24.0,15.0,Other/unspecified,Other specified and classifiable
+Male,138.0,114.0,14.0,,Penetrating,Firearm
+Male,86.0,136.0,30.0,11.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Motorcyclist
+Male,80.0,120.0,0.0,7.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,84.0,50.0,10.0,14.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,8.0,Blunt,MVT Motorcyclist
+Male,,,12.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,102.0,28.0,,3.0,Penetrating,Firearm
+Male,0.0,,28.0,14.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Female,87.0,160.0,10.0,6.0,Blunt,MVT Occupant
+Female,186.0,125.0,16.0,,Blunt,MVT Occupant
+Male,0.0,57.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,119.0,80.0,24.0,9.0,Other/unspecified,Other specified and classifiable
+Male,,,,,Penetrating,Firearm
+Male,140.0,122.0,12.0,3.0,Penetrating,Cut/pierce
+Male,,50.0,10.0,3.0,Blunt,MVT Pedestrian
+Female,143.0,154.0,24.0,13.0,Penetrating,Cut/pierce
+Female,154.0,53.0,20.0,3.0,Blunt,Fall
+Male,,,,,Penetrating,Firearm
+Male,70.0,140.0,30.0,13.0,Penetrating,Cut/pierce
+Male,0.0,124.0,0.0,3.0,Penetrating,Firearm
+Male,,76.0,,15.0,Blunt,MVT Occupant
+Female,,,,,Penetrating,Cut/pierce
+Female,,,,,Penetrating,Firearm
+Male,80.0,120.0,10.0,14.0,Penetrating,Firearm
+Male,112.0,92.0,16.0,14.0,Blunt,MVT Occupant
+Male,96.0,100.0,4.0,3.0,Penetrating,Firearm
+Male,151.0,60.0,0.0,3.0,Blunt,MVT Motorcyclist
+Male,,,,,Penetrating,Firearm
+Male,0.0,140.0,38.0,11.0,Penetrating,Cut/pierce
+Male,,102.0,12.0,3.0,Penetrating,Cut/pierce
+Male,136.0,83.0,10.0,15.0,Penetrating,Firearm
+Male,150.0,50.0,28.0,14.0,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,123.0,60.0,26.0,,Penetrating,Firearm
+Male,0.0,0.0,8.0,3.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,,90.0,32.0,8.0,Penetrating,Cut/pierce
+Female,,,,,Penetrating,Firearm
+Female,,46.0,,3.0,Blunt,MVT Motorcyclist
+Male,154.0,90.0,,3.0,Blunt,MVT Pedal cyclist
+Male,,151.0,10.0,7.0,Penetrating,Cut/pierce
+Male,86.0,120.0,24.0,15.0,Penetrating,Firearm
+Female,100.0,93.0,16.0,14.0,Penetrating,Cut/pierce
+Male,,,,,Blunt,MVT Occupant
+Female,,100.0,20.0,15.0,Penetrating,Cut/pierce
+Male,,88.0,6.0,3.0,Penetrating,Cut/pierce
+Male,115.0,130.0,12.0,3.0,Penetrating,Firearm
+Male,65.0,38.0,12.0,3.0,Blunt,MVT Pedestrian
+Female,,,,,Blunt,MVT Occupant
+Male,150.0,152.0,20.0,15.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,60.0,130.0,10.0,11.0,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,,100.0,24.0,7.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,120.0,96.0,24.0,4.0,Penetrating,Firearm
+Male,122.0,140.0,20.0,15.0,Penetrating,Cut/pierce
+Male,90.0,120.0,30.0,12.0,Penetrating,Firearm
+Male,,,,3.0,Blunt,MVT Occupant
+Male,150.0,96.0,18.0,15.0,Blunt,MVT Occupant
+Male,0.0,0.0,10.0,3.0,Penetrating,Firearm
+Male,76.0,150.0,50.0,15.0,Penetrating,Firearm
+Male,90.0,70.0,9.0,10.0,Blunt,MVT Motorcyclist
+Male,90.0,125.0,24.0,10.0,Penetrating,Cut/pierce
+Male,81.0,92.0,24.0,15.0,Penetrating,Firearm
+Female,60.0,114.0,4.0,4.0,Penetrating,Cut/pierce
+Male,,,10.0,3.0,Penetrating,Firearm
+Male,149.0,110.0,30.0,3.0,Blunt,MVT Occupant
+Male,73.0,146.0,24.0,12.0,Penetrating,Cut/pierce
+Male,,110.0,28.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,54.0,24.0,12.0,Blunt,MVT Unspecified
+Female,60.0,166.0,12.0,13.0,Blunt,MVT Occupant
+Male,100.0,139.0,10.0,15.0,Penetrating,Firearm
+Male,,,,,Blunt,"Transport, other"
+Male,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,128.0,157.0,20.0,15.0,Penetrating,Firearm
+Male,99.0,112.0,28.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,136.0,56.0,,3.0,Penetrating,Firearm
+Male,216.0,88.0,12.0,3.0,Blunt,MVT Occupant
+Male,,,,,Blunt,MVT Occupant
+Male,0.0,0.0,8.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,110.0,67.0,6.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,130.0,158.0,22.0,15.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,154.0,128.0,8.0,7.0,Blunt,MVT Occupant
+Male,113.0,136.0,18.0,15.0,Penetrating,Cut/pierce
+Female,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,108.0,150.0,24.0,15.0,Penetrating,Firearm
+Male,88.0,114.0,18.0,15.0,Penetrating,Firearm
+Male,98.0,124.0,16.0,10.0,Blunt,MVT Motorcyclist
+Female,94.0,151.0,22.0,15.0,Blunt,MVT Occupant
+Female,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,83.0,114.0,30.0,13.0,Blunt,"Transport, other"
+Male,60.0,105.0,30.0,3.0,Blunt,MVT Occupant
+Female,92.0,130.0,8.0,3.0,Blunt,Fall
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Female,117.0,124.0,24.0,4.0,Blunt,"Pedestrian, other"
+Male,,,,,Penetrating,Cut/pierce
+Female,104.0,160.0,26.0,15.0,Penetrating,Cut/pierce
+Male,66.0,140.0,20.0,7.0,Blunt,MVT Pedestrian
+Male,0.0,70.0,6.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,130.0,120.0,24.0,9.0,Penetrating,Firearm
+Male,70.0,110.0,26.0,15.0,Penetrating,Firearm
+Male,170.0,133.0,10.0,,Blunt,Fall
+Male,150.0,116.0,32.0,15.0,Blunt,MVT Pedestrian
+Female,66.0,140.0,32.0,,Blunt,MVT Occupant
+Male,,86.0,,3.0,Penetrating,Firearm
+Male,88.0,,,14.0,Penetrating,Firearm
+Male,0.0,60.0,0.0,3.0,Penetrating,Firearm
+Male,60.0,120.0,8.0,3.0,Penetrating,Firearm
+Male,0.0,60.0,10.0,3.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,155.0,81.0,29.0,13.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,127.0,110.0,16.0,3.0,Blunt,MVT Occupant
+Female,134.0,24.0,24.0,8.0,Penetrating,Firearm
+Female,,,,,Blunt,MVT Unspecified
+Male,,,,,Penetrating,Firearm
+Male,88.0,108.0,14.0,6.0,Blunt,"Transport, other"
+Male,104.0,56.0,0.0,3.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,,,,,Penetrating,Firearm
+Female,0.0,0.0,20.0,15.0,Penetrating,Cut/pierce
+Male,0.0,50.0,6.0,3.0,Penetrating,Firearm
+Female,57.0,116.0,24.0,8.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,,29.0,0.0,3.0,Blunt,MVT Pedestrian
+Female,104.0,114.0,0.0,12.0,Blunt,MVT Occupant
+Male,0.0,0.0,0.0,3.0,Blunt,MVT Occupant
+Male,124.0,142.0,30.0,11.0,Penetrating,Cut/pierce
+Male,124.0,120.0,46.0,15.0,Penetrating,Firearm
+Male,0.0,82.0,0.0,3.0,Penetrating,Firearm
+Male,77.0,138.0,30.0,14.0,Penetrating,Firearm
+Male,160.0,100.0,6.0,9.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,154.0,133.0,16.0,3.0,Blunt,MVT Occupant
+Male,,58.0,22.0,10.0,Blunt,MVT Occupant
+Male,110.0,100.0,14.0,10.0,Penetrating,Firearm
+Female,70.0,140.0,8.0,4.0,Blunt,MVT Occupant
+Female,116.0,125.0,36.0,14.0,Blunt,MVT Occupant
+Male,150.0,130.0,22.0,15.0,Penetrating,Firearm
+Male,73.0,67.0,,13.0,Blunt,MVT Occupant
+Male,90.0,65.0,6.0,3.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,94.0,111.0,18.0,15.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,142.0,80.0,15.0,,Blunt,MVT Pedestrian
+Male,102.0,75.0,18.0,15.0,Penetrating,Cut/pierce
+Male,40.0,70.0,0.0,3.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,,0.0,0.0,3.0,Penetrating,Firearm
+Male,,46.0,,3.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,98.0,102.0,18.0,15.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,136.0,130.0,20.0,15.0,Penetrating,Cut/pierce
+Male,117.0,97.0,28.0,4.0,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,90.0,144.0,24.0,7.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Female,,78.0,12.0,3.0,Blunt,MVT Pedestrian
+Male,,,,,Penetrating,Firearm
+Male,80.0,122.0,6.0,6.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Blunt,MVT Motorcyclist
+Male,80.0,120.0,30.0,15.0,Penetrating,Cut/pierce
+Male,160.0,110.0,32.0,15.0,Blunt,MVT Occupant
+Male,90.0,95.0,16.0,10.0,Penetrating,Firearm
+Female,,24.0,,,Penetrating,Firearm
+Male,155.0,122.0,26.0,15.0,Blunt,MVT Occupant
+Male,80.0,150.0,30.0,,Penetrating,Firearm
+Male,,140.0,20.0,13.0,Blunt,MVT Pedestrian
+Male,,130.0,30.0,13.0,Penetrating,Firearm
+Female,150.0,135.0,22.0,15.0,Penetrating,Firearm
+Female,121.0,132.0,24.0,7.0,Blunt,MVT Occupant
+Male,84.0,100.0,14.0,7.0,Penetrating,Firearm
+Male,123.0,108.0,22.0,15.0,Penetrating,Firearm
+Male,117.0,62.0,24.0,15.0,Penetrating,Firearm
+Male,0.0,58.0,6.0,3.0,Penetrating,Firearm
+Male,99.0,172.0,12.0,3.0,Blunt,"Transport, other"
+Male,,,,3.0,Penetrating,Firearm
+Male,,82.0,22.0,14.0,Penetrating,Cut/pierce
+Male,,130.0,,7.0,Penetrating,Firearm
+Male,118.0,86.0,20.0,13.0,Blunt,MVT Pedestrian
+Male,116.0,117.0,18.0,3.0,Blunt,MVT Occupant
+Male,,,,,,
+Male,129.0,130.0,4.0,3.0,Penetrating,Firearm
+Female,,110.0,26.0,15.0,Penetrating,Cut/pierce
+Male,80.0,93.0,24.0,3.0,Penetrating,Firearm
+Female,,,0.0,,Penetrating,Firearm
+Male,80.0,40.0,10.0,3.0,Penetrating,Firearm
+Female,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Male,97.0,87.0,18.0,13.0,,
+Male,,,,12.0,,
+Male,,40.0,6.0,3.0,,
+Male,,,,3.0,,
+Female,128.0,96.0,24.0,15.0,Penetrating,Cut/pierce
+Male,,,12.0,10.0,Penetrating,Firearm
+Male,,160.0,12.0,3.0,Penetrating,Firearm
+Female,107.0,110.0,8.0,3.0,Blunt,MVT Occupant
+Male,,146.0,26.0,15.0,Penetrating,Firearm
+Male,,74.0,2.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,123.0,89.0,30.0,3.0,Blunt,MVT Occupant
+Male,112.0,134.0,28.0,14.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Blunt,MVT Motorcyclist
+Male,,,,,Blunt,Fall
+Male,,100.0,20.0,13.0,Burn,Fire/flame
+Male,,60.0,,15.0,Penetrating,Firearm
+Female,,,,,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,100.0,144.0,24.0,3.0,Blunt,MVT Occupant
+Male,,0.0,14.0,3.0,Blunt,MVT Motorcyclist
+Male,140.0,88.0,16.0,15.0,Blunt,Fall
+Male,,,,,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Female,62.0,100.0,12.0,7.0,Penetrating,Cut/pierce
+Female,99.0,70.0,10.0,6.0,Other/unspecified,"Natural/environmental,  Bites and stings"
+Male,,,,,Penetrating,Firearm
+Male,220.0,148.0,26.0,15.0,Blunt,MVT Motorcyclist
+Male,90.0,134.0,12.0,7.0,Penetrating,Cut/pierce
+Male,58.0,0.0,12.0,5.0,Penetrating,Cut/pierce
+Male,,0.0,28.0,3.0,Penetrating,Firearm
+Male,104.0,145.0,12.0,3.0,Penetrating,Firearm
+Male,198.0,101.0,24.0,15.0,Blunt,MVT Motorcyclist
+Male,132.0,119.0,6.0,3.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Male,117.0,168.0,28.0,10.0,Blunt,MVT Motorcyclist
+Male,,,,,Penetrating,Firearm
+Male,91.0,133.0,30.0,11.0,Blunt,MVT Motorcyclist
+Male,,,,,Penetrating,Cut/pierce
+Male,,140.0,42.0,3.0,Penetrating,Cut/pierce
+Male,157.0,88.0,24.0,15.0,Penetrating,Firearm
+Male,,,,3.0,Blunt,MVT Motorcyclist
+Male,,,,,Penetrating,Firearm
+Male,142.0,104.0,22.0,15.0,Blunt,MVT Occupant
+Male,50.0,115.0,24.0,15.0,Penetrating,Cut/pierce
+Male,86.0,118.0,6.0,3.0,Penetrating,Firearm
+Male,140.0,138.0,28.0,3.0,Blunt,MVT Motorcyclist
+Male,103.0,111.0,24.0,15.0,Blunt,MVT Occupant
+Male,,,,,,
+Male,,78.0,30.0,,Penetrating,Cut/pierce
+Male,85.0,120.0,34.0,15.0,Penetrating,Cut/pierce
+Male,,,,,Blunt,MVT Motorcyclist
+Male,95.0,140.0,30.0,15.0,Blunt,MVT Occupant
+Male,120.0,98.0,30.0,15.0,Penetrating,Cut/pierce
+Male,156.0,132.0,26.0,14.0,Blunt,"Transport, other"
+Female,,,,,Penetrating,Firearm
+Female,,68.0,4.0,3.0,Blunt,MVT Pedestrian
+Male,82.0,65.0,6.0,14.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Female,,,,,Penetrating,Cut/pierce
+Male,,110.0,18.0,15.0,Penetrating,Firearm
+Male,220.0,168.0,8.0,,,
+Male,,,,,Penetrating,Cut/pierce
+Male,,44.0,5.0,3.0,Penetrating,Firearm
+Male,116.0,126.0,22.0,12.0,Penetrating,Cut/pierce
+Male,92.0,78.0,0.0,4.0,Penetrating,Firearm
+Male,106.0,55.0,10.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,1.0,15.0,Penetrating,Firearm
+Male,,63.0,,8.0,Penetrating,Firearm
+Male,,,,,Blunt,"Transport, other"
+Male,,,,,,
+Male,,,,,Blunt,MVT Occupant
+Male,94.0,112.0,25.0,14.0,Blunt,"Pedestrian, other"
+Female,100.0,120.0,26.0,11.0,Blunt,MVT Motorcyclist
+Male,,,0.0,3.0,Penetrating,Firearm
+Male,84.0,82.0,12.0,10.0,Penetrating,Firearm
+Male,74.0,120.0,18.0,15.0,Penetrating,Firearm
+Male,183.0,80.0,,15.0,Penetrating,Firearm
+Male,117.0,101.0,,15.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,114.0,90.0,20.0,15.0,Penetrating,Cut/pierce
+Male,60.0,92.0,6.0,3.0,,
+Male,139.0,111.0,22.0,13.0,Penetrating,Cut/pierce
+Male,,116.0,24.0,13.0,Blunt,MVT Motorcyclist
+Female,68.0,77.0,0.0,3.0,Blunt,MVT Occupant
+Male,111.0,52.0,16.0,5.0,Blunt,Fall
+Male,,,,,Penetrating,Firearm
+Male,97.0,140.0,18.0,15.0,Penetrating,Cut/pierce
+Male,80.0,166.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,88.0,90.0,28.0,12.0,Penetrating,Firearm
+Male,119.0,38.0,,15.0,Penetrating,Firearm
+Male,114.0,128.0,25.0,,Blunt,MVT Occupant
+Male,138.0,91.0,10.0,9.0,Penetrating,Cut/pierce
+Male,150.0,90.0,30.0,15.0,Penetrating,Cut/pierce
+Male,140.0,122.0,10.0,3.0,,
+Male,0.0,0.0,0.0,3.0,,
+Male,,,,,Penetrating,Firearm
+Male,,37.0,,12.0,Blunt,MVT Occupant
+Male,117.0,94.0,0.0,3.0,,
+Male,0.0,101.0,0.0,3.0,Blunt,MVT Occupant
+Male,,,,,Blunt,MVT Occupant
+Male,0.0,0.0,0.0,3.0,Blunt,MVT Pedestrian
+Female,110.0,112.0,24.0,15.0,Penetrating,Firearm
+Male,80.0,60.0,14.0,,Penetrating,Firearm
+Male,170.0,84.0,4.0,3.0,Blunt,MVT Occupant
+Male,,140.0,10.0,3.0,Penetrating,Firearm
+Male,66.0,60.0,20.0,15.0,Penetrating,Cut/pierce
+Male,90.0,80.0,6.0,3.0,Penetrating,Firearm
+Male,80.0,126.0,26.0,,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,90.0,140.0,22.0,15.0,Blunt,Fall
+Male,0.0,60.0,8.0,6.0,Penetrating,Cut/pierce
+Female,92.0,92.0,18.0,14.0,Penetrating,Cut/pierce
+Male,190.0,110.0,26.0,15.0,Penetrating,Firearm
+Male,109.0,150.0,24.0,15.0,Penetrating,Firearm
+Male,110.0,124.0,20.0,15.0,Penetrating,Cut/pierce
+Male,0.0,110.0,12.0,6.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Blunt,MVT Motorcyclist
+Male,,,,,Penetrating,Cut/pierce
+Male,0.0,126.0,12.0,15.0,Penetrating,Firearm
+Male,80.0,120.0,30.0,3.0,Penetrating,Firearm
+Male,119.0,30.0,11.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,110.0,26.0,13.0,Blunt,MVT Occupant
+Female,135.0,180.0,22.0,15.0,Blunt,Fall
+Male,,,,,Penetrating,Firearm
+Female,117.0,80.0,20.0,8.0,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,,,,,Blunt,"Transport, other"
+Male,113.0,113.0,16.0,9.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,96.0,140.0,24.0,15.0,Penetrating,Firearm
+Male,110.0,138.0,26.0,15.0,Blunt,MVT Occupant
+Male,,,,3.0,Blunt,MVT Motorcyclist
+Male,0.0,0.0,6.0,3.0,Blunt,MVT Occupant
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,90.0,130.0,16.0,15.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,0.0,80.0,16.0,3.0,Blunt,MVT Pedestrian
+Male,,80.0,16.0,10.0,Penetrating,Firearm
+Male,143.0,116.0,,5.0,Blunt,MVT Occupant
+Female,0.0,0.0,0.0,3.0,Penetrating,Cut/pierce
+Female,,,,,Blunt,MVT Occupant
+Male,109.0,85.0,0.0,3.0,Blunt,"Transport, other"
+Male,,,,,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,,,,,Blunt,Fall
+Male,,,,,Penetrating,Firearm
+Male,100.0,100.0,18.0,13.0,Penetrating,Cut/pierce
+Male,,,,,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,130.0,108.0,18.0,15.0,Penetrating,Firearm
+Male,,118.0,14.0,14.0,Penetrating,Firearm
+Female,122.0,60.0,4.0,3.0,,
+Female,44.0,105.0,10.0,3.0,,
+Male,90.0,120.0,20.0,15.0,,
+Male,,0.0,,3.0,Penetrating,Firearm
+Female,104.0,128.0,14.0,6.0,Penetrating,Cut/pierce
+Male,,100.0,12.0,8.0,Blunt,MVT Pedestrian
+Male,118.0,130.0,20.0,15.0,Penetrating,Firearm
+Male,112.0,110.0,30.0,12.0,Other/unspecified,Other specified and classifiable
+Male,,,,,Penetrating,Cut/pierce
+Male,116.0,70.0,12.0,4.0,Penetrating,Firearm
+Male,159.0,50.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,,92.0,11.0,3.0,Penetrating,Cut/pierce
+Male,150.0,60.0,0.0,3.0,Penetrating,Firearm
+Male,134.0,101.0,,8.0,Penetrating,Firearm
+Female,136.0,106.0,6.0,3.0,Blunt,MVT Occupant
+Male,156.0,102.0,26.0,15.0,,
+Male,96.0,70.0,16.0,10.0,Penetrating,Firearm
+Male,150.0,130.0,30.0,15.0,,
+Male,0.0,207.0,16.0,3.0,Penetrating,Cut/pierce
+Male,102.0,110.0,18.0,14.0,,
+Male,132.0,130.0,30.0,12.0,Penetrating,Firearm
+Female,,,,,,
+Male,76.0,130.0,34.0,15.0,Penetrating,Cut/pierce
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Female,103.0,83.0,8.0,3.0,Blunt,MVT Occupant
+Male,180.0,128.0,20.0,7.0,Blunt,Fall
+Male,144.0,115.0,41.0,15.0,Penetrating,Firearm
+Male,92.0,130.0,18.0,15.0,Penetrating,Cut/pierce
+Male,108.0,76.0,24.0,15.0,Penetrating,Cut/pierce
+Male,,84.0,14.0,15.0,Penetrating,Firearm
+Male,,120.0,20.0,13.0,Blunt,MVT Motorcyclist
+Male,0.0,30.0,0.0,3.0,Penetrating,Firearm
+Male,223.0,127.0,32.0,6.0,Penetrating,Firearm
+Male,143.0,48.0,12.0,3.0,Penetrating,Firearm
+Male,111.0,127.0,22.0,15.0,Penetrating,Firearm
+Male,140.0,92.0,18.0,15.0,Penetrating,Cut/pierce
+Male,77.0,100.0,14.0,3.0,Penetrating,Firearm
+Male,164.0,140.0,36.0,13.0,Blunt,MVT Occupant
+Male,,,,,Penetrating,Cut/pierce
+Male,120.0,150.0,24.0,15.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Pedestrian
+Male,149.0,130.0,36.0,15.0,,
+Female,,,,,,
+Male,0.0,0.0,4.0,3.0,Penetrating,Firearm
+Female,139.0,100.0,30.0,15.0,Penetrating,Firearm
+Male,60.0,62.0,8.0,11.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,60.0,120.0,32.0,5.0,Penetrating,Cut/pierce
+Male,,,20.0,14.0,Blunt,Fall
+Male,64.0,130.0,0.0,3.0,Penetrating,Cut/pierce
+Male,130.0,90.0,22.0,14.0,Penetrating,Cut/pierce
+Male,,,,,Blunt,MVT Occupant
+Male,,,,,Blunt,MVT Occupant
+Male,101.0,80.0,18.0,15.0,Penetrating,Cut/pierce
+Male,185.0,82.0,10.0,7.0,,
+Male,110.0,130.0,24.0,15.0,,
+Male,96.0,145.0,38.0,6.0,,
+Male,88.0,122.0,,15.0,,
+Male,,,,,,
+Male,,130.0,6.0,3.0,,
+Male,,,,3.0,,
+Male,106.0,90.0,8.0,3.0,,
+Female,94.0,102.0,24.0,14.0,,
+Male,109.0,81.0,,,Blunt,MVT Motorcyclist
+Female,78.0,52.0,12.0,3.0,,
+Female,104.0,40.0,24.0,3.0,Blunt,MVT Pedestrian
+Male,,130.0,30.0,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,104.0,54.0,18.0,15.0,,
+Male,134.0,116.0,28.0,9.0,,
+Male,,103.0,6.0,3.0,,
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,73.0,102.0,30.0,12.0,Blunt,MVT Pedestrian
+Male,83.0,91.0,30.0,8.0,Penetrating,Cut/pierce
+Male,80.0,114.0,28.0,15.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Female,80.0,,,3.0,Blunt,MVT Occupant
+Male,92.0,109.0,20.0,13.0,Penetrating,Firearm
+Male,100.0,110.0,24.0,15.0,Penetrating,Firearm
+Female,82.0,128.0,12.0,15.0,Penetrating,Cut/pierce
+Male,,,8.0,3.0,Penetrating,Firearm
+Male,188.0,122.0,30.0,15.0,Penetrating,Firearm
+Male,,140.0,8.0,3.0,Blunt,MVT Occupant
+Male,130.0,148.0,30.0,15.0,Penetrating,Firearm
+Male,122.0,142.0,40.0,15.0,Blunt,"Pedestrian, other"
+Male,161.0,91.0,20.0,15.0,Penetrating,Firearm
+Male,0.0,116.0,6.0,6.0,Penetrating,Firearm
+Male,,44.0,0.0,3.0,Penetrating,Firearm
+Female,176.0,96.0,26.0,10.0,Blunt,MVT Occupant
+Male,100.0,175.0,12.0,3.0,Blunt,MVT Occupant
+Male,,,,,Blunt,MVT Occupant
+Male,97.0,72.0,6.0,3.0,Penetrating,Firearm
+Female,70.0,50.0,8.0,3.0,Blunt,Fall
+Male,0.0,0.0,6.0,3.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Pedal cyclist
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,,Blunt,MVT Occupant
+Male,59.0,112.0,35.0,5.0,Blunt,MVT Pedestrian
+Male,54.0,95.0,27.0,3.0,Blunt,MVT Occupant
+Male,130.0,80.0,16.0,15.0,Penetrating,Cut/pierce
+Female,,,,,Penetrating,Firearm
+Male,106.0,110.0,35.0,3.0,,
+Male,160.0,88.0,22.0,15.0,,
+Male,73.0,112.0,24.0,15.0,Penetrating,Firearm
+Male,61.0,110.0,0.0,3.0,Blunt,Fall
+Male,186.0,144.0,9.0,15.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Male,147.0,91.0,0.0,3.0,Penetrating,Firearm
+Male,152.0,112.0,4.0,3.0,Penetrating,Firearm
+Male,,,,,Blunt,MVT Occupant
+Male,0.0,52.0,12.0,3.0,Penetrating,Firearm
+Male,61.0,68.0,30.0,15.0,Penetrating,Cut/pierce
+Male,122.0,90.0,12.0,3.0,Penetrating,Firearm
+Male,96.0,135.0,24.0,15.0,Penetrating,Firearm
+Male,,77.0,0.0,3.0,Penetrating,Firearm
+Male,,150.0,24.0,3.0,Blunt,MVT Motorcyclist
+Female,146.0,126.0,32.0,13.0,Blunt,MVT Pedestrian
+Female,0.0,137.0,0.0,,Penetrating,Cut/pierce
+Male,108.0,72.0,10.0,3.0,,
+Male,140.0,64.0,8.0,8.0,,
+Male,0.0,60.0,0.0,3.0,,
+Female,,156.0,20.0,14.0,,
+Male,0.0,0.0,0.0,3.0,,
+Female,,,,3.0,Blunt,MVT Pedestrian
+Male,64.0,60.0,18.0,15.0,,
+Male,,,,,Penetrating,Cut/pierce
+Male,106.0,80.0,6.0,3.0,Blunt,MVT Pedestrian
+Male,72.0,92.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,150.0,66.0,18.0,15.0,,
+Male,0.0,0.0,0.0,3.0,Blunt,MVT Pedestrian
+Male,,,,,Penetrating,Firearm
+Male,54.0,80.0,12.0,15.0,,
+Female,173.0,108.0,20.0,15.0,,
+Female,,56.0,6.0,3.0,,
+Male,0.0,0.0,0.0,3.0,,
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,,Blunt,MVT Pedestrian
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Male,178.0,116.0,18.0,15.0,Penetrating,Cut/pierce
+Female,,94.0,18.0,15.0,Penetrating,Firearm
+Male,,0.0,,3.0,Penetrating,Firearm
+Male,70.0,58.0,4.0,3.0,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Cut/pierce
+Male,,,,,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Other/unspecified,Other specified and classifiable
+Male,0.0,86.0,12.0,3.0,Penetrating,Firearm
+Male,,,,,Penetrating,Cut/pierce
+Male,109.0,104.0,29.0,15.0,,
+Male,101.0,76.0,8.0,3.0,Other/unspecified,Other specified and classifiable
+Male,,,,,Blunt,"Transport, other"
+Male,126.0,100.0,20.0,15.0,Penetrating,Firearm
+Male,160.0,150.0,36.0,3.0,Blunt,Fall
+Female,125.0,121.0,39.0,13.0,Blunt,MVT Occupant
+Female,,,,,Blunt,MVT Pedestrian
+Male,,,,,Penetrating,Firearm
+Male,80.0,158.0,20.0,3.0,Penetrating,Cut/pierce
+Male,,70.0,4.0,6.0,Penetrating,Cut/pierce
+Female,177.0,113.0,12.0,8.0,Blunt,MVT Occupant
+Male,233.0,160.0,12.0,3.0,Blunt,MVT Occupant
+Male,122.0,86.0,18.0,3.0,,
+Female,148.0,134.0,32.0,4.0,,
+Male,150.0,73.0,12.0,6.0,,
+Male,67.0,71.0,18.0,3.0,,
+Male,,60.0,30.0,6.0,Penetrating,Firearm
+Male,77.0,120.0,28.0,13.0,Penetrating,Firearm
+Male,112.0,90.0,16.0,15.0,Penetrating,Firearm
+Male,,,,,Penetrating,Firearm
+Female,96.0,150.0,49.0,15.0,Penetrating,Firearm
+Male,110.0,135.0,8.0,9.0,,
+Male,136.0,50.0,0.0,3.0,,
+Male,,130.0,8.0,8.0,Penetrating,Cut/pierce
+Male,80.0,90.0,18.0,15.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,,
+Female,124.0,138.0,24.0,15.0,Blunt,MVT Occupant
+Male,,,,,,
+Male,70.0,60.0,6.0,3.0,Blunt,"Pedestrian, other"
+Male,,80.0,20.0,12.0,Penetrating,Cut/pierce
+Male,70.0,84.0,16.0,3.0,Blunt,MVT Motorcyclist
+Male,144.0,113.0,0.0,3.0,Blunt,MVT Unspecified
+Male,185.0,105.0,11.0,,,
+Male,140.0,149.0,20.0,15.0,Blunt,"Transport, other"
+Male,80.0,70.0,40.0,13.0,Blunt,MVT Occupant
+Male,92.0,90.0,24.0,15.0,Penetrating,Firearm
+Male,58.0,130.0,8.0,4.0,Penetrating,Cut/pierce
+Female,,,,,Penetrating,Firearm
+Male,80.0,100.0,14.0,,Penetrating,Cut/pierce
+Male,,122.0,12.0,8.0,Penetrating,Firearm
+Male,151.0,120.0,6.0,3.0,Blunt,MVT Motorcyclist
+Male,74.0,120.0,18.0,15.0,Penetrating,Firearm
+Male,183.0,80.0,,15.0,Penetrating,Firearm
+Male,0.0,0.0,0.0,3.0,Penetrating,Firearm
+Male,114.0,90.0,20.0,15.0,Penetrating,Cut/pierce
+Male,72.0,126.0,22.0,3.0,Blunt,MVT Pedestrian
+Male,108.0,136.0,24.0,3.0,Blunt,MVT Occupant
+Female,0.0,22.0,0.0,3.0,Blunt,MVT Occupant
+Male,,,,,Penetrating,Firearm
+Male,,,,,,
+Male,136.0,136.0,24.0,15.0,Penetrating,Firearm
+Male,146.0,125.0,0.0,3.0,,
+Male,,,,,Penetrating,Cut/pierce
+Male,180.0,116.0,26.0,3.0,Blunt,MVT Occupant
+Male,60.0,70.0,24.0,15.0,Penetrating,Firearm
+Male,144.0,44.0,3.0,3.0,Penetrating,Firearm
+Male,144.0,102.0,24.0,14.0,Penetrating,Firearm
+Male,145.0,97.0,20.0,13.0,Blunt,MVT Occupant
+Female,,,,,Penetrating,Firearm
