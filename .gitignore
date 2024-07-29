@@ -4,10 +4,5 @@ Data/Combined_data/
 **/.csv
 /Data
 *.csv
-.DS_Store
-Book Chapters/.DS_Store
-Papers/.DS_Store
-Projects/.DS_Store
-Python/.DS_Store
-Python/venv/lib/.DS_Store
 Python/venv/lib/python3.7/.DS_Store
+Python/venv/lib/.DS_Store
