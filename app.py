@@ -1,11 +1,12 @@
 import os
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, render_template, jsonify, send_from_directory
 import joblib
 import numpy as np
+import qrcode
 
 app = Flask(__name__)
 
-# Load the trained XGBoost model
+# Load the trained model
 model = joblib.load('xgb_model.pkl')
 
 # Define the order of features
@@ -40,15 +41,43 @@ def predict():
         ]
         # Convert the input data to a numpy array
         input_data = np.array(input_data).reshape(1, -1)
-        # Make prediction
+        # Make prediction and get probability
         prediction = int(model.predict(input_data)[0])
+        probability = model.predict_proba(input_data)[0]
+        confidence = np.max(probability) * 100  # Convert to percentage
         # Convert prediction to a descriptive result
         result = "Deceased" if prediction == 1 else "Survived"
-        # Return the result
-        return jsonify({'result': result})
+        # Return the result and confidence
+        return jsonify({'result': result, 'confidence': confidence})
     except Exception as e:
         # Return the error message for debugging
         return jsonify({'error': str(e)})
+
+@app.route('/generate_qr')
+def generate_qr():
+    url = "http://rtcotomyml.ngrok.app"  # Replace with your website URL
+    qr = qrcode.QRCode(
+        version=1,
+        error_correction=qrcode.constants.ERROR_CORRECT_L,
+        box_size=10,
+        border=4,
+    )
+    qr.add_data(url)
+    qr.make(fit=True)
+    
+    img = qr.make_image(fill_color="black", back_color="white")
+    img_path = os.path.join('static', 'qr_code.png')
+    img.save(img_path)
+    
+    return send_from_directory('static', 'qr_code.png')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))  # Use port 8080 or another specific port

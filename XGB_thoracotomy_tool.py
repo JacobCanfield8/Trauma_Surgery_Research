@@ -154,7 +154,7 @@ TRAUMA_all_df.loc[(TRAUMA_all_df['EDDISCHARGEDISPOSITION'] == 5.0) |
 TRAUMA_all_df = TRAUMA_all_df.drop(columns=['EDDISCHARGEDISPOSITION', 'HOSPDISCHARGEDISPOSITION', 'INC_KEY'])
 
 # Step 5: Select rows of interest
-input_list = ['SEX', 'EMSSBP', 'EMSPULSERATE', 'EMSRESPIRATORYRATE', 'EMSTOTALGCS', 'PREHOSPITALCARDIACARREST', 'TRAUMATYPE']
+input_list = ['SEX', 'EMSSBP', 'EMSPULSERATE', 'EMSRESPIRATORYRATE', 'EMSTOTALGCS', 'PREHOSPITALCARDIACARREST', 'TRAUMATYPE', 'MECHANISM']
 required_list = ['DECEASED']
 TRAUMA_all_df = TRAUMA_all_df.loc[:, input_list + required_list]
 
@@ -284,9 +284,77 @@ def GBM_classifier(X_train, y_train, X_val, y_val, X_test, y_test, learning_rate
     
     return model, y_train_pred, y_val_pred, y_test_pred, y_train_proba, y_val_proba, y_test_proba, roc_auc_val, roc_auc_test
 
+def logistic_regression_classifier(X_train, y_train, X_val, y_val, X_test, y_test, penalty):
+    """
+    Train and evaluate a Logistic Regression classifier with hyperparameter tuning.
+    
+    Parameters:
+    X_train (pd.DataFrame): Training features.
+    y_train (pd.Series): Training target.
+    X_val (pd.DataFrame): Validation features.
+    y_val (pd.Series): Validation target.
+    X_test (pd.DataFrame): Test features.
+    y_test (pd.Series): Test target.
+    
+    Returns:
+    model (LogisticRegression): Trained Logistic Regression model.
+    y_train_pred (np.ndarray): Predicted target values for training set.
+    y_val_pred (np.ndarray): Predicted target values for validation set.
+    y_test_pred (np.ndarray): Predicted target values for test set.
+    y_train_proba (np.ndarray): Predicted probabilities for training set.
+    y_val_proba (np.ndarray): Predicted probabilities for validation set.
+    y_test_proba (np.ndarray): Predicted probabilities for test set.
+    roc_auc_val (float): AUROC for validation set.
+    roc_auc_test (float): AUROC for test set.
+    """
+    if penalty in ['l1', 'l2']:
+        param_grid = {
+            'C': [1/0.00001, 1/0.0001, 1/0.001, 1/0.01, 1/0.1, 1/1.0],
+            'penalty': ['l1', 'l2'],
+            'solver': ['liblinear']  # 'liblinear' is suitable for small datasets and allows L1 penalty
+        }
+    elif penalty == 'elasticnet':
+        param_grid = {
+            'C': [1/0.00001, 1/0.0001, 1/0.001, 1/0.01, 1/0.1, 1/1.0],
+            'l1_ratio': [0,1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+            'penalty': ['elasticnet'],
+            'solver': ['saga']  # 'liblinear' is suitable for small datasets and allows L1 penalty
+        }
+    else:
+        print('Not a valid penalty')
+    model = LogisticRegression(max_iter=10000)
+    grid_search = GridSearchCV(estimator=model, param_grid=param_grid, scoring='roc_auc', cv=3, verbose=2, n_jobs=-1)
+    grid_search.fit(X_train, y_train)
+    best_model = grid_search.best_estimator_
+    grid_search.fit(X_train, y_train)
+    best_model = grid_search.best_estimator_
+    y_train_pred = best_model.predict(X_train)
+    y_val_pred = best_model.predict(X_val)
+    y_test_pred = best_model.predict(X_test)
+    
+    y_train_proba = best_model.predict_proba(X_train)[:, 1]
+    y_val_proba = best_model.predict_proba(X_val)[:, 1]
+    y_test_proba = best_model.predict_proba(X_test)[:, 1]
+    
+    # Save the best model
+    joblib.dump(best_model, 'logistic_regression_%s_model.pkl'%penalty)
+    
+    # Calculate AUROC
+    roc_auc_val = auc(*roc_curve(y_val, y_val_proba)[:2])
+    roc_auc_test = auc(*roc_curve(y_test, y_test_proba)[:2])
+    
+    return best_model, y_train_pred, y_val_pred, y_test_pred, y_train_proba, y_val_proba, y_test_proba, roc_auc_val, roc_auc_test
+
+
 # Split the data
 X_train, y_train, X_val, y_val, X_test, y_test = make_splits(TRAUMA_all_df, y_column='DECEASED')
 
 # Train the model and get predictions and metrics
-model, y_train_pred, y_val_pred, y_test_pred, y_train_proba, y_val_proba, y_test_proba, roc_auc_val, roc_auc_test = GBM_classifier(
-    X_train, y_train, X_val, y_val, X_test, y_test, XGBM=True, learning_rate=0.1, n_estimators=100)
+#model, y_train_pred, y_val_pred, y_test_pred, y_train_proba, y_val_proba, y_test_proba, roc_auc_val, roc_auc_test = GBM_classifier(
+#    X_train, y_train, X_val, y_val, X_test, y_test, XGBM=True, learning_rate=0.1, n_estimators=100)
+    
+model, y_train_pred, y_val_pred, y_test_pred, y_train_proba, y_val_proba, y_test_proba, roc_auc_val, roc_auc_test = logistic_regression_classifier(X_train, y_train, X_val, y_val, X_test, y_test, penalty='l1')
+
+model, y_train_pred, y_val_pred, y_test_pred, y_train_proba, y_val_proba, y_test_proba, roc_auc_val, roc_auc_test = logistic_regression_classifier(X_train, y_train, X_val, y_val, X_test, y_test, penalty='l2')
+
+model, y_train_pred, y_val_pred, y_test_pred, y_train_proba, y_val_proba, y_test_proba, roc_auc_val, roc_auc_test = logistic_regression_classifier(X_train, y_train, X_val, y_val, X_test, y_test, penalty='elasticnet')
