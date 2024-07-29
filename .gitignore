@@ -2,3 +2,5 @@ Data/
 Data/Combined_data/
 **/.DS_Store
 **/.csv
+/Data
+*.csv
