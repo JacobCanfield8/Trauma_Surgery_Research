@@ -1,5 +1,4 @@
 Data/
 Data/Combined_data/
 *.csv
-Python/Thoracotomy_tool/models/
-*.pkl
+Python/Thoracotomy_tool/models/xgb*.pkl
