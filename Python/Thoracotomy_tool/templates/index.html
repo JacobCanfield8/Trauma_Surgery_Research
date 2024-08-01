@@ -97,47 +97,113 @@
         <hr>
         <form id="predictionForm">
             <div class="form-group">
+                <label for="model_type">Model Type:</label>
+                <select id="model_type" name="model_type" class="form-control" required>
+                    <option value="l1">L1 Logistic Regression</option>
+                    <option value="l2">L2 Logistic Regression</option>
+                    <option value="elasticnet">ElasticNet Logistic Regression</option>
+                    <option value="xgb">XGBoost</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="data_type">Data Type:</label>
+                <select id="data_type" name="data_type" class="form-control" required>
+                    <option value="EMS">EMS Only</option>
+                    <option value="ED">ED Only</option>
+                    <option value="EMS_ED">EMS and ED</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="features">Select Features:</label>
+                <div id="feature-checkboxes">
+                    <input type="checkbox" name="features" value="SEX"> SEX <br>
+                    <input type="checkbox" name="features" value="AGEYEARS"> AGEYEARS <br>
+                    <input type="checkbox" name="features" value="EMSSBP"> EMSSBP <br>
+                    <input type="checkbox" name="features" value="EMSPULSERATE"> EMSPULSERATE <br>
+                    <input type="checkbox" name="features" value="EMSRESPIRATORYRATE"> EMSRESPIRATORYRATE <br>
+                    <input type="checkbox" name="features" value="EMSTOTALGCS"> EMSTOTALGCS <br>
+                    <input type="checkbox" name="features" value="SBP"> SBP <br>
+                    <input type="checkbox" name="features" value="PULSERATE"> PULSERATE <br>
+                    <input type="checkbox" name="features" value="RESPIRATORYRATE"> RESPIRATORYRATE <br>
+                    <input type="checkbox" name="features" value="TOTALGCS"> TOTALGCS <br>
+                    <input type="checkbox" name="features" value="TEMPERATURE"> TEMPERATURE <br>
+                    <input type="checkbox" name="features" value="PREHOSPITALCARDIACARREST"> PREHOSPITALCARDIACARREST <br>
+                    <input type="checkbox" name="features" value="TRAUMATYPE"> TRAUMATYPE <br>
+                    <input type="checkbox" name="features" value="MECHANISM"> MECHANISM <br>
+                </div>
+            </div>
+            <div class="form-group">
                 <label for="SEX">Sex:</label>
-                <select id="SEX" name="SEX" class="form-control" required>
+                <select id="SEX" name="SEX" class="form-control">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="EMSSBP">EMS Systolic Blood Pressure (SBP):</label>
-                <input type="number" id="EMSSBP" name="EMSSBP" class="form-control" required>
+                <label for="AGEYEARS">Age (years):</label>
+                <input type="number" id="AGEYEARS" name="AGEYEARS" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="EMSSBP">EMS SBP:</label>
+                <input type="number" id="EMSSBP" name="EMSSBP" class="form-control">
             </div>
             <div class="form-group">
                 <label for="EMSPULSERATE">EMS Pulse Rate:</label>
-                <input type="number" id="EMSPULSERATE" name="EMSPULSERATE" class="form-control" required>
+                <input type="number" id="EMSPULSERATE" name="EMSPULSERATE" class="form-control">
             </div>
             <div class="form-group">
                 <label for="EMSRESPIRATORYRATE">EMS Respiratory Rate:</label>
-                <input type="number" id="EMSRESPIRATORYRATE" name="EMSRESPIRATORYRATE" class="form-control" required>
+                <input type="number" id="EMSRESPIRATORYRATE" name="EMSRESPIRATORYRATE" class="form-control">
             </div>
             <div class="form-group">
-                <label for="EMSTOTALGCS">EMS Total Glasgow Coma Scale (GCS):</label>
-                <input type="number" id="EMSTOTALGCS" name="EMSTOTALGCS" class="form-control" required>
+                <label for="EMSTOTALGCS">EMS Total GCS:</label>
+                <input type="number" id="EMSTOTALGCS" name="EMSTOTALGCS" class="form-control">
             </div>
             <div class="form-group">
                 <label for="PREHOSPITALCARDIACARREST">Prehospital Cardiac Arrest:</label>
-                <select id="PREHOSPITALCARDIACARREST" name="PREHOSPITALCARDIACARREST" class="form-control" required>
+                <select id="PREHOSPITALCARDIACARREST" name="PREHOSPITALCARDIACARREST" class="form-control">
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
+                    <option value="Unknown">Unknown</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="TRAUMATYPE">Trauma Type:</label>
-                <select id="TRAUMATYPE" name="TRAUMATYPE" class="form-control" required>
+                <select id="TRAUMATYPE" name="TRAUMATYPE" class="form-control">
                     <option value="Blunt">Blunt</option>
                     <option value="Penetrating">Penetrating</option>
                     <option value="Burn">Burn</option>
                     <option value="Other/unspecified">Other/unspecified</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-stethoscope"></i> Predict</button>
+            <div class="form-group">
+                <label for="MECHANISM">Mechanism:</label>
+                <input type="number" id="MECHANISM" name="MECHANISM" class="form-control">
+            </div>
+            <div id="ed-fields" style="display:none;">
+                <div class="form-group">
+                    <label for="SBP">ED Systolic Blood Pressure (SBP):</label>
+                    <input type="number" id="SBP" name="SBP" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="PULSERATE">ED Pulse Rate:</label>
+                    <input type="number" id="PULSERATE" name="PULSERATE" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="RESPIRATORYRATE">ED Respiratory Rate:</label>
+                    <input type="number" id="RESPIRATORYRATE" name="RESPIRATORYRATE" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="TOTALGCS">ED Total Glasgow Coma Scale (GCS):</label>
+                    <input type="number" id="TOTALGCS" name="TOTALGCS" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="TEMPERATURE">ED Temperature:</label>
+                    <input type="number" id="TEMPERATURE" name="TEMPERATURE" class="form-control">
+                </div>
+            </div>
+            <div class="result alert" id="result"></div>
         </form>
-        <div class="result alert" id="result"></div>
         <div class="qr-code">
             <h2>Scan the QR code to visit the website:</h2>
             <img src="/generate_qr" alt="QR Code">
@@ -149,9 +215,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#predictionForm').on('submit', function(event) {
+            $('#data_type').on('change', function() {
+                if ($(this).val() == 'EMS_ED' || $(this).val() == 'ED') {
+                    $('#ed-fields').show();
+                } else {
+                    $('#ed-fields').hide();
+                }
+            });
+
+            $('#predictionForm input, #predictionForm select').on('change', function(event) {
                 event.preventDefault();
-                var formData = $(this).serialize();
+                var formData = $('#predictionForm').serialize();
                 $.ajax({
                     url: '/predict',
                     method: 'POST',
@@ -162,7 +236,12 @@
                             resultDiv.text(response.error);
                             resultDiv.removeClass('alert-success').addClass('alert-danger');
                         } else {
-                            resultDiv.html(response.result + " (Confidence: " + response.confidence.toFixed(2) + "%)");
+                            resultDiv.html(`
+                                ${response.result} (Confidence: ${response.confidence.toFixed(2)}%)<br>
+                                AUROC: ${response.AUROC.toFixed(2)}<br>
+                                Samples Used: ${response.samples_used}<br>
+                                Accuracy: ${response.accuracy.toFixed(2)}%
+                            `);
                             if (response.result === 'Survived') {
                                 resultDiv.removeClass('alert-danger').addClass('alert-success');
                             } else {

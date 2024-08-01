@@ -1,8 +1,5 @@
 Data/
 Data/Combined_data/
-**/.DS_Store
-**/.csv
-/Data
 *.csv
-Python/venv/lib/python3.7/.DS_Store
-Python/venv/lib/.DS_Store
+Python/Thoracotomy_tool/models/
+*.pkl
