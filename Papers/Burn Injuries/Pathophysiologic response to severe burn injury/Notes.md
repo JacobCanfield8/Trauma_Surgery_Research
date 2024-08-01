@@ -1,0 +1,77 @@
+# Notes
+
+- Post-burn pt are hypermetabolic, disabled and debilitated for around 24 mo.
+- Pathophysiologic responses are immediate/ early response
+- Hypermetabolic response characterized by:
+    - Increased body temp
+    - Increased O2 and glc consumption
+    - Increased CO2 produced
+    - Increased glycogenolysis, proteolysis, lipolysis and futile substrate cycling
+- Begins around day 5 post-burn and continues up to 24 mo
+    - Causes loss of lean body mass (LBM)
+    - Loss of bone density
+    - M. weakness
+    - Poor wound healing
+- Endocine responses with acute and long-term phases
+- Acute Phase Endocrine response:
+    - Low effector hormones d/t target organ resistance
+- Long term phase endocrine response:
+    - Hypothalamic suppression endocrine aces
+    - Contributes to low serum levels of subsequent target organ hormones
+- Correcting these endocrine changes has proven to be difficult and at times detrimental d/t lack of understanding 
+- Burn to 30-40% of body induces hypermetabolic and inflammatory response
+- Metabolic/ energy demands are immense --> mobiliztion of protein/ a.a.
+- Increased protein turnover, degradation and negative nitrogen balance are characteristic
+- Sk m., skin, immune system and cellular membrane transport functions are compromised
+    - Loss of 10% LBM --> immune fn impairment
+    - Loss of 20% LBM --> decreased wound healing with 30% mortality
+    - Loss of 30% LBM --> PNA and pressure scores with 50% mortality
+    - Loss of 40% LBM --> 100% mortality
+- Agents with pronounced post-burn effects on hypermetabolism/ catabolism:
+    - Insulin
+    - IGF-I
+    - Oxandrolone
+    - GH
+    - Propranolol
+- As GH increases, mortality increases in critically ill adults
+- Insulin, Oxandrolone and propranolol are recommended agents to attenuate hypermetabolism/ catabolism
+- "Fat transporter proteins are decreased postburn, whereas triglycerides and free fatty acids are increased, which could explain the fatty infiltration of the liver and other organs postburn. We have shown that hepatomegaly with fatty infiltration is associated with increased incidence of sepsis and mortality implying the importance of organ integrity and function"
+    - Reversing increased lipolysis and fatty infiltration could have positive impact on mortality/ morbidity
+    - Propranolol shown to do this:
+        - Decreases urinary nitrogen loss
+        - Decreases peripheral lipolysis
+        - Decreases whole body urea production
+        - Decreases resting energy expenditure
+        - Decreases hepatic fat storage
+        - Reverses hepatomegaly
+- Recombinant human growth hormone (rhGH) enhances:
+    - immunte fn
+    - wound healing
+    - diminishes hypermetabolic response s/p sx, trauma, sepsis or thermal injury
+- rhGH stimulates protein synthesis and attenuates nitrogen loss
+- Trials in which rhGH was administered led to increased mortality and thus is restricted/ limited
+- IGF-I shown to be a better drug but needs more testing in human subjects
+- Main drivers of hypermetabolic response are catecholamines and Cortisol (Not thyroid hormones)
+- Glucocorticoids described as main hormones responsible for proteolysis and catabolism
+    - Trial underway to block cortisol production using ketoconazole underway (this paper is old, maybe investigate progress)
+- Glc metabolisn becomes inefficient anaerobic metabolism
+    - Increased lactate production --> Increased glc consumption
+- Glc production from alanine elevated
+- Insulin levels increase but do not necessarily have a potent effect indicating hepatic insulin resistance (futile cycling d/t increased gluconeogensis despite insuline levels)
+- Hyperglycemia associated with higher mortality in these pts
+- Insulin resistance increases with severity of burn indicating a larger than normal serum insulin required to achieve normoglycemia
+- Insulin, metformin and fenofibrate important to improve insulin sensitivity
+- Osteocalcin and PTH markedly decreased
+- Burn patients have almost no bone turnover or synthesis
+- Pamidronate shown to improve bone metabolism during acute and long phases
+- Estrogen supplementation can increase bone metabolism and mineralization as well as positive effect on inflammation and hypermetabolism and improve survival
+- Estrogen found to be acutely low but then returned to normal during hospital stay, testosterone was decreased and progesterone increased over time
+- Testosterone was studied and improved m. catabolsim but had side effects 
+    - Led to oxandrolone (synthetic testosterone analogue)
+- In pt with >40% burn of TBSA, they had increased CO and cardiac index with massive tachycardia (160-170%) and even remained high at time of discharge from ICU
+- HR will remain elevated up to 24 mo post burn
+- Increased cardiac stress post-burn associated with myocardial depression
+- cardiac distress and myocardial dysfunction are main contributors to mortality in large burns
+- Propranolol partially addresses this (decreases cardiac work and improves O2 delivery to heart)
+- Exercise program implemented at 6 month post-burn shows improved physical function
+- 
