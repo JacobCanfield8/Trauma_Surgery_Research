@@ -1,53 +1,61 @@
 Starting application...
 Killing any process using port 8080...
 Starting Gunicorn...
-[2024-07-26 10:48:02 -0500] [15985] [INFO] Starting gunicorn 22.0.0
-[2024-07-26 10:48:02 -0500] [15985] [INFO] Listening at: http://0.0.0.0:8080 (15985)
-[2024-07-26 10:48:02 -0500] [15985] [INFO] Using worker: sync
-[2024-07-26 10:48:02 -0500] [15989] [INFO] Booting worker with pid: 15989
-Gunicorn started with PID 15985
+[2024-08-02 17:36:52 -0500] [88150] [INFO] Starting gunicorn 22.0.0
+[2024-08-02 17:36:52 -0500] [88150] [INFO] Listening at: http://0.0.0.0:8080 (88150)
+[2024-08-02 17:36:52 -0500] [88150] [INFO] Using worker: sync
+[2024-08-02 17:36:52 -0500] [88154] [INFO] Booting worker with pid: 88154
+/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/pandas/compat/_optional.py:138: UserWarning: Pandas requires version '2.7.0' or newer of 'numexpr' (version '2.6.9' currently installed).
+  warnings.warn(msg, UserWarning)
+[2024-08-02 17:36:54 -0500] [88154] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/JakeCanfield/Documents/Trauma_Surgery_Research/Python/Thoracotomy_tool/wsgi.py", line 1, in <module>
+    from app import app  # Adjust this import based on your actual Flask app module
+  File "/Users/JakeCanfield/Documents/Trauma_Surgery_Research/Python/Thoracotomy_tool/app.py", line 11, in <module>
+    metrics_df = pd.read_csv('models/model_performance_metrics.csv')
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py", line 229, in _open_handles
+    errors=kwds.get("encoding_errors", "strict"),
+  File "/Users/JakeCanfield/anaconda3/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: 'models/model_performance_metrics.csv'
+[2024-08-02 17:36:54 -0500] [88154] [INFO] Worker exiting (pid: 88154)
+[2024-08-02 17:36:54 -0500] [88150] [ERROR] Worker (pid:88154) exited with code 3
+[2024-08-02 17:36:54 -0500] [88150] [ERROR] Shutting down: Master
+[2024-08-02 17:36:54 -0500] [88150] [ERROR] Reason: Worker failed to boot.
+Gunicorn started with PID 88150
 Reloading nginx...
-nginx reloaded successfully.
-Starting ngrok...
-ngrok started successfully.
-http - start an HTTP tunnel
-
-USAGE:
-  ngrok http [address:port | port] [flags]
-
-AUTHOR:
-  ngrok - <support@ngrok.com>
-
-COMMANDS: 
-  config          update or migrate ngrok's configuration file
-  http            start an HTTP tunnel
-  tcp             start a TCP tunnel
-  tunnel          start a tunnel for use with a tunnel-group backend
-
-EXAMPLES: 
-  ngrok http 80                                                 # secure public URL for port 80 web server
-  ngrok http --domain baz.ngrok.dev 8080                        # port 8080 available at baz.ngrok.dev
-  ngrok tcp 22                                                  # tunnel arbitrary TCP traffic to port 22
-  ngrok http 80 --oauth=google --oauth-allow-email=foo@foo.com  # secure your app with oauth
-
-Paid Features: 
-  ngrok http 80 --domain mydomain.com                           # run ngrok with your own custom domain
-  ngrok http 80 --allow-cidr 2600:8c00::a03c:91ee:fe69:9695/32  # run ngrok with IP policy restrictions
-  Upgrade your account at https://dashboard.ngrok.com/billing/subscription to access paid features
-
-Upgrade your account at https://dashboard.ngrok.com/billing/subscription to access paid features
-
-Flags:
-  -h, --help      help for ngrok
-
-Use "ngrok [command] --help" for more information about a command.
-
-ERROR:  authentication failed: Your account is limited to 1 simultaneous ngrok agent sessions.
-ERROR:  You can run multiple simultaneous tunnels from a single agent session by defining the tunnels in your agent configuration file and starting them with the command `ngrok start --all`.
-ERROR:  Read more about the agent configuration file: https://ngrok.com/docs/secure-tunnels/ngrok-agent/reference/config
-ERROR:  You can view your current agent sessions in the dashboard:
-ERROR:  https://dashboard.ngrok.com/tunnels/agents
-ERROR:  
-ERROR:  ERR_NGROK_108
-ERROR:  https://ngrok.com/docs/errors/err_ngrok_108
-ERROR:  
+sudo: 3 incorrect password attempts
