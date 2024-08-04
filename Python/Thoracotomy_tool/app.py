@@ -17,7 +17,11 @@ trauma_mapping = {
 }
 
 # Define the correct order of features as per the model generation script
-feature_order = ['SEX', 'EMSSBP', 'EMSPULSERATE', 'EMSRESPIRATORYRATE', 'EMSTOTALGCS', 'PREHOSPITALCARDIACARREST', 'TRAUMATYPE']
+feature_order = [
+    'SEX', 'AGEYEARS', 'EMSSBP', 'EMSPULSERATE', 'EMSRESPIRATORYRATE', 'EMSTOTALGCS', 
+    'SBP', 'PULSERATE', 'RESPIRATORYRATE', 'TOTALGCS', 'TEMPERATURE', 
+    'PREHOSPITALCARDIACARREST', 'TRAUMATYPE', 'MECHANISM'
+]
 
 @app.route('/')
 def home():
@@ -45,6 +49,8 @@ def predict():
         input_data_dict = {}
         if 'SEX' in request.form and request.form['SEX']:
             input_data_dict['SEX'] = sex_mapping[request.form['SEX']]
+        if 'AGEYEARS' in request.form and request.form['AGEYEARS']:
+            input_data_dict['AGEYEARS'] = int(request.form['AGEYEARS'])
         if 'EMSSBP' in request.form and request.form['EMSSBP']:
             input_data_dict['EMSSBP'] = int(request.form['EMSSBP'])
         if 'EMSPULSERATE' in request.form and request.form['EMSPULSERATE']:
@@ -53,10 +59,22 @@ def predict():
             input_data_dict['EMSRESPIRATORYRATE'] = int(request.form['EMSRESPIRATORYRATE'])
         if 'EMSTOTALGCS' in request.form and request.form['EMSTOTALGCS']:
             input_data_dict['EMSTOTALGCS'] = int(request.form['EMSTOTALGCS'])
+        if 'SBP' in request.form and request.form['SBP']:
+            input_data_dict['SBP'] = int(request.form['SBP'])
+        if 'PULSERATE' in request.form and request.form['PULSERATE']:
+            input_data_dict['PULSERATE'] = int(request.form['PULSERATE'])
+        if 'RESPIRATORYRATE' in request.form and request.form['RESPIRATORYRATE']:
+            input_data_dict['RESPIRATORYRATE'] = int(request.form['RESPIRATORYRATE'])
+        if 'TOTALGCS' in request.form and request.form['TOTALGCS']:
+            input_data_dict['TOTALGCS'] = int(request.form['TOTALGCS'])
+        if 'TEMPERATURE' in request.form and request.form['TEMPERATURE']:
+            input_data_dict['TEMPERATURE'] = float(request.form['TEMPERATURE'])
         if 'PREHOSPITALCARDIACARREST' in request.form and request.form['PREHOSPITALCARDIACARREST']:
             input_data_dict['PREHOSPITALCARDIACARREST'] = prehospital_mapping[request.form['PREHOSPITALCARDIACARREST']]
         if 'TRAUMATYPE' in request.form and request.form['TRAUMATYPE']:
             input_data_dict['TRAUMATYPE'] = trauma_mapping[request.form['TRAUMATYPE']]
+        if 'MECHANISM' in request.form and request.form['MECHANISM']:
+            input_data_dict['MECHANISM'] = int(request.form['MECHANISM'])
 
         # Ensure at least 2 features are provided
         if len(input_data_dict) < 2:
