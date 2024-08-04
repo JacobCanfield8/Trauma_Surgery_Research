@@ -3,24 +3,12 @@ from flask import Flask, request, render_template, jsonify, send_from_directory
 import joblib
 import numpy as np
 import qrcode
-import pandas as pd
 
 app = Flask(__name__)
 
-# Load the performance metrics
-metrics_df = pd.read_csv('models/model_performance_metrics.csv')
-
-# Load the trained models
-models = {}
-model_files = os.listdir('models')
-for model_file in model_files:
-    if model_file.endswith('.pkl'):
-        model_name = model_file.replace('.pkl', '')
-        models[model_name] = joblib.load(os.path.join('models', model_file))
-
 # Define mappings
 sex_mapping = {'Male': 1, 'Female': 2}
-prehospital_mapping = {'yes': 1, 'no': 2, 'Unknown': 3}
+prehospital_mapping = {'yes': 1, 'no': 2}
 trauma_mapping = {
     'Blunt': 1,
     'Penetrating': 2,
@@ -28,77 +16,103 @@ trauma_mapping = {
     'Other/unspecified': 4
 }
 
+# Define the correct order of features as per the model generation script
+feature_order = ['SEX', 'EMSSBP', 'EMSPULSERATE', 'EMSRESPIRATORYRATE', 'EMSTOTALGCS', 'PREHOSPITALCARDIACARREST', 'TRAUMATYPE']
+
 @app.route('/')
 def home():
-    return render_template('index.html', models=metrics_df['Model Type'].unique(), feature_sets=metrics_df['Data Type'].unique())
+    return render_template('home.html')
+
+@app.route('/rtcotomyml')
+def rtcotomyml():
+    return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        # Get data from form and map categorical inputs
-        data_type = request.form['data_type']
-        model_type = request.form['model_type']
-        
-        input_data = {
-            'SEX': sex_mapping.get(request.form.get('SEX', ''), 0),
-            'AGEYEARS': int(request.form.get('AGEYEARS', 0)),
-            'EMSSBP': int(request.form.get('EMSSBP', 0)),
-            'EMSPULSERATE': int(request.form.get('EMSPULSERATE', 0)),
-            'EMSRESPIRATORYRATE': int(request.form.get('EMSRESPIRATORYRATE', 0)),
-            'EMSTOTALGCS': int(request.form.get('EMSTOTALGCS', 0)),
-            'PREHOSPITALCARDIACARREST': prehospital_mapping.get(request.form.get('PREHOSPITALCARDIACARREST', ''), 0),
-            'TRAUMATYPE': trauma_mapping.get(request.form.get('TRAUMATYPE', ''), 0),
-            'MECHANISM': int(request.form.get('MECHANISM', 0))
-        }
-        
-        if data_type in ['ED', 'EMS_ED']:
-            input_data.update({
-                'SBP': int(request.form.get('SBP', 0)),
-                'PULSERATE': int(request.form.get('PULSERATE', 0)),
-                'RESPIRATORYRATE': int(request.form.get('RESPIRATORYRATE', 0)),
-                'TOTALGCS': int(request.form.get('TOTALGCS', 0)),
-                'TEMPERATURE': float(request.form.get('TEMPERATURE', 0.0))
-            })
-        
-        # Filter out zero values
-        input_data = {k: v for k, v in input_data.items() if v != 0}
-        
-        # Get the model based on available features
-        features = sorted(input_data.keys())
-        model_key = f'{model_type}_model_{data_type}_{"_".join(features)}'
-        model = models.get(model_key)
-        
-        if not model:
-            raise ValueError(f"No model found for the given features: {features}")
-        
-        # Convert the input data to a numpy array
-        input_data_array = np.array(list(input_data.values())).reshape(1, -1)
-        
-        # Make prediction and get probability
-        prediction = int(model.predict(input_data_array)[0])
-        probability = model.predict_proba(input_data_array)[0]
-        confidence = np.max(probability) * 100  # Convert to percentage
+        # Log input data for debugging
+        print("Received input data: ", request.form)
 
-        # Get the model performance metrics
-        metrics = metrics_df[(metrics_df['Data Type'] == data_type) & (metrics_df['Model Type'] == model_type) & (metrics_df['Features'] == ','.join(features))].iloc[0]
-        accuracy = metrics['Accuracy'] * 100
-        auroc = metrics['AUROC']
-        samples_used = metrics['Samples Used']
+        # Get data from form and map categorical inputs
+        input_data_dict = {}
+        if 'SEX' in request.form and request.form['SEX']:
+            input_data_dict['SEX'] = sex_mapping[request.form['SEX']]
+        if 'EMSSBP' in request.form and request.form['EMSSBP']:
+            input_data_dict['EMSSBP'] = int(request.form['EMSSBP'])
+        if 'EMSPULSERATE' in request.form and request.form['EMSPULSERATE']:
+            input_data_dict['EMSPULSERATE'] = int(request.form['EMSPULSERATE'])
+        if 'EMSRESPIRATORYRATE' in request.form and request.form['EMSRESPIRATORYRATE']:
+            input_data_dict['EMSRESPIRATORYRATE'] = int(request.form['EMSRESPIRATORYRATE'])
+        if 'EMSTOTALGCS' in request.form and request.form['EMSTOTALGCS']:
+            input_data_dict['EMSTOTALGCS'] = int(request.form['EMSTOTALGCS'])
+        if 'PREHOSPITALCARDIACARREST' in request.form and request.form['PREHOSPITALCARDIACARREST']:
+            input_data_dict['PREHOSPITALCARDIACARREST'] = prehospital_mapping[request.form['PREHOSPITALCARDIACARREST']]
+        if 'TRAUMATYPE' in request.form and request.form['TRAUMATYPE']:
+            input_data_dict['TRAUMATYPE'] = trauma_mapping[request.form['TRAUMATYPE']]
+
+        # Ensure at least 2 features are provided
+        if len(input_data_dict) < 2:
+            return jsonify({'error': 'Please provide at least 2 features'})
+
+        # Log extracted features for debugging
+        print("Extracted features: ", input_data_dict.keys())
+        print("Input data: ", input_data_dict.values())
+
+        # Determine the model, data type, and penalty (if any) from the form input
+        model_type = request.form['MODEL_TYPE']  # 'xgb' or 'logistic_regression'
+        data_type = request.form['DATA_TYPE']  # 'EMS', 'ED', or 'EMS_ED'
+        penalty = request.form.get('PENALTY', '')  # Only for logistic_regression, otherwise empty
+
+        # Convert "EMS + ED" to "EMS_ED" for file path construction
+        if data_type == "EMS + ED":
+            data_type = "EMS_ED"
+
+        # Order the features as per the defined feature_order
+        ordered_features = [feature for feature in feature_order if feature in input_data_dict]
+        input_data = [input_data_dict[feature] for feature in ordered_features]
+
+        # Construct the file path
+        base_path = '/Users/JakeCanfield/Documents/Trauma_Surgery_Research/Python/Thoracotomy_tool/models/'
+        if model_type == 'xgb':
+            model_filename = f"{base_path}{model_type}_model_{data_type}_{'_'.join(ordered_features)}.pkl"
+        else:
+            model_filename = f"{base_path}{model_type}_{penalty}_model_{data_type}_{'_'.join(ordered_features)}.pkl"
+
+        # Check if model file exists
+        if not os.path.exists(model_filename):
+            error_message = f"Model file {model_filename} not found"
+            print(error_message)
+            return jsonify({'error': error_message})
+
+        # Load the model
+        model = joblib.load(model_filename)
+
+        # Convert the input data to a numpy array
+        input_data = np.array(input_data).reshape(1, -1)
+
+        # Make prediction and get probability
+        prediction = int(model.predict(input_data)[0])
+        probability = model.predict_proba(input_data)[0]
+        confidence = np.max(probability) * 100  # Convert to percentage
 
         # Convert prediction to a descriptive result
         result = "Deceased" if prediction == 1 else "Survived"
 
-        # Return the result and additional information
-        return jsonify({
-            'result': result,
-            'confidence': confidence,
-            'AUROC': auroc,
-            'samples_used': samples_used,
-            'accuracy': accuracy
-        })
+        # Return the result and confidence
+        return jsonify({'result': result, 'confidence': confidence})
     except Exception as e:
         # Return the error message for debugging
-        return jsonify({'error': str(e)})
+        error_message = f"An error occurred: {str(e)}"
+        print(error_message)
+        return jsonify({'error': error_message})
 
 @app.route('/generate_qr')
 def generate_qr():
@@ -118,14 +132,6 @@ def generate_qr():
     
     return send_from_directory('static', 'qr_code.png')
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
-
-@app.route('/contact')
-def contact():
-    return render_template('contact.html')
-
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8080))  # Use port 8080 or another specific port
+    port = int(os.environ.get("PORT", 8080))
     app.run(host='0.0.0.0', port=port, debug=True)

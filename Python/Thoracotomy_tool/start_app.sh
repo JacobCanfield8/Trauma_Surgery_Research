@@ -1,6 +1,8 @@
 #!/bin/bash
 
 LOGFILE="start_app.log"
+LOGDIR="$(dirname $LOGFILE)"
+mkdir -p $LOGDIR
 
 # Function to check the status of the last executed command
 check_status() {
@@ -28,15 +30,25 @@ sleep 5  # Give Gunicorn time to start
 echo "Gunicorn started with PID $GUNICORN_PID" | tee -a $LOGFILE
 check_status
 
-# Reload nginx
-echo "Reloading nginx..." | tee -a $LOGFILE
-sudo nginx -s reload >> $LOGFILE 2>&1
-check_status
-echo "nginx reloaded successfully." | tee -a $LOGFILE
+# Prompt for sudo password at the start
+echo "Please enter your sudo password to reload nginx:"
+sudo -v
 
-# Start ngrok
+# Check if Nginx is running and reload or restart as necessary
+if pgrep -x "nginx" > /dev/null
+then
+    echo "Reloading nginx..." | tee -a $LOGFILE
+    sudo nginx -s reload >> $LOGFILE 2>&1
+else
+    echo "Nginx not running. Starting nginx..." | tee -a $LOGFILE
+    sudo brew services start nginx >> $LOGFILE 2>&1
+fi
+check_status
+echo "nginx reloaded or started successfully." | tee -a $LOGFILE
+
+# Start ngrok using configuration file
 echo "Starting ngrok..." | tee -a $LOGFILE
-ngrok http 8080 >> $LOGFILE 2>&1 &
+ngrok start --all >> $LOGFILE 2>&1 &
 check_status
 echo "ngrok started successfully." | tee -a $LOGFILE
 

@@ -18,11 +18,31 @@
         }
         .header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         .header h1 {
             color: #dc3545;
             font-size: 2.5rem;
+        }
+        .nav-bar {
+            background-color: #dc3545;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-bar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+        .nav-bar a:hover {
+            text-decoration: underline;
+        }
+        .instructions {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #333;
         }
         .form-group label {
             font-weight: bold;
@@ -31,6 +51,12 @@
             border-radius: 5px;
             height: 45px;
             font-size: 1rem;
+        }
+        .section-header {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545;
         }
         .btn-primary {
             background-color: #dc3545;
@@ -41,12 +67,6 @@
         .btn-primary:hover {
             background-color: #c82333;
             border-color: #bd2130;
-        }
-        .img-header {
-            width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-            border-radius: 10px;
         }
         .result {
             margin-top: 20px;
@@ -73,12 +93,8 @@
         .qr-code img {
             max-width: 100%;
         }
-        .nav-link {
-            font-size: 1.25rem;
-            color: #007bff;
-        }
-        .nav-link:hover {
-            text-decoration: underline;
+        .hidden {
+            display: none;
         }
     </style>
 </head>
@@ -89,121 +105,202 @@
             <h1><i class="fas fa-heartbeat"></i> RTcotomy ML</h1>
             <p class="lead">Predicting outcomes of resuscitative thoracotomy for trauma and critical care.</p>
         </div>
-        <nav>
-            <a href="/" class="nav-link">Home</a> |
-            <a href="/about" class="nav-link">About</a> |
-            <a href="/contact" class="nav-link">Contact</a>
-        </nav>
+        <div class="nav-bar">
+			<a href="/rtcotomyml">RTcotomyML</a>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <div class="instructions">
+            <p>Please select a Model Type and Data Type to reveal the remaining fields. If you select Logistic Regression, you will also have to select a penalty. After you that you will be provided several fields to input data. Once you have provided at least two data variables, a prediction can be made, but it should be noted that having more data fields filled in will lead to more reliable results and higher confidence in most instances (more information is always best). Confidence is a value that is equivalent to the assigned probability that the given model and parameters classified the outcome as its respective class (i.e. if the output is Deceased (Confidence: 75%), that would indicate that the machine learning model predicted the probability that this individual would expire if they were to receive a resuscitative thoracotomy within the first 20 minutes of arrival to the ED). Just to reiterate, in order to facilitate predictions in the absence of all of the input parameter, a separate model is trained for each combination of vitals, therefore the data fields you input inherently change the model being used, hence more input data results in a more reliable prediction both statistically and also in meaningfulness.</p>
+        </div>
         <hr>
         <form id="predictionForm">
+            <div class="section-header">Machine Learning Model Parameters and Data Features</div>
             <div class="form-group">
-                <label for="model_type">Model Type:</label>
-                <select id="model_type" name="model_type" class="form-control" required>
-                    <option value="l1">L1 Logistic Regression</option>
-                    <option value="l2">L2 Logistic Regression</option>
-                    <option value="elasticnet">ElasticNet Logistic Regression</option>
+                <label for="MODEL_TYPE">Model Type:</label>
+                <select id="MODEL_TYPE" name="MODEL_TYPE" class="form-control" required>
+                    <option value="">Select</option>
                     <option value="xgb">XGBoost</option>
+                    <option value="logistic_regression">Logistic Regression</option>
+                </select>
+            </div>
+            <div class="form-group" id="penalty-group" style="display: none;">
+                <label for="PENALTY">Penalty (for Logistic Regression):</label>
+                <select id="PENALTY" name="PENALTY" class="form-control">
+                    <option value="">Select</option>
+                    <option value="l1">LASSO</option>
+                    <option value="l2">RIDGE</option>
+                    <option value="elasticnet">Elastic Net</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="data_type">Data Type:</label>
-                <select id="data_type" name="data_type" class="form-control" required>
-                    <option value="EMS">EMS Only</option>
-                    <option value="ED">ED Only</option>
-                    <option value="EMS_ED">EMS and ED</option>
+                <label for="DATA_TYPE">Data Type:</label>
+                <select id="DATA_TYPE" name="DATA_TYPE" class="form-control" required>
+                    <option value="">Select</option>
+                    <option value="EMS">EMS</option>
+                    <option value="ED">ED</option>
+                    <option value="EMS + ED">EMS + ED</option>
                 </select>
             </div>
-            <div class="form-group">
-                <label for="features">Select Features:</label>
-                <div id="feature-checkboxes">
-                    <input type="checkbox" name="features" value="SEX"> SEX <br>
-                    <input type="checkbox" name="features" value="AGEYEARS"> AGEYEARS <br>
-                    <input type="checkbox" name="features" value="EMSSBP"> EMSSBP <br>
-                    <input type="checkbox" name="features" value="EMSPULSERATE"> EMSPULSERATE <br>
-                    <input type="checkbox" name="features" value="EMSRESPIRATORYRATE"> EMSRESPIRATORYRATE <br>
-                    <input type="checkbox" name="features" value="EMSTOTALGCS"> EMSTOTALGCS <br>
-                    <input type="checkbox" name="features" value="SBP"> SBP <br>
-                    <input type="checkbox" name="features" value="PULSERATE"> PULSERATE <br>
-                    <input type="checkbox" name="features" value="RESPIRATORYRATE"> RESPIRATORYRATE <br>
-                    <input type="checkbox" name="features" value="TOTALGCS"> TOTALGCS <br>
-                    <input type="checkbox" name="features" value="TEMPERATURE"> TEMPERATURE <br>
-                    <input type="checkbox" name="features" value="PREHOSPITALCARDIACARREST"> PREHOSPITALCARDIACARREST <br>
-                    <input type="checkbox" name="features" value="TRAUMATYPE"> TRAUMATYPE <br>
-                    <input type="checkbox" name="features" value="MECHANISM"> MECHANISM <br>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="SEX">Sex:</label>
-                <select id="SEX" name="SEX" class="form-control">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="AGEYEARS">Age (years):</label>
-                <input type="number" id="AGEYEARS" name="AGEYEARS" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="EMSSBP">EMS SBP:</label>
-                <input type="number" id="EMSSBP" name="EMSSBP" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="EMSPULSERATE">EMS Pulse Rate:</label>
-                <input type="number" id="EMSPULSERATE" name="EMSPULSERATE" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="EMSRESPIRATORYRATE">EMS Respiratory Rate:</label>
-                <input type="number" id="EMSRESPIRATORYRATE" name="EMSRESPIRATORYRATE" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="EMSTOTALGCS">EMS Total GCS:</label>
-                <input type="number" id="EMSTOTALGCS" name="EMSTOTALGCS" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="PREHOSPITALCARDIACARREST">Prehospital Cardiac Arrest:</label>
-                <select id="PREHOSPITALCARDIACARREST" name="PREHOSPITALCARDIACARREST" class="form-control">
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                    <option value="Unknown">Unknown</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="TRAUMATYPE">Trauma Type:</label>
-                <select id="TRAUMATYPE" name="TRAUMATYPE" class="form-control">
-                    <option value="Blunt">Blunt</option>
-                    <option value="Penetrating">Penetrating</option>
-                    <option value="Burn">Burn</option>
-                    <option value="Other/unspecified">Other/unspecified</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="MECHANISM">Mechanism:</label>
-                <input type="number" id="MECHANISM" name="MECHANISM" class="form-control">
-            </div>
-            <div id="ed-fields" style="display:none;">
+
+            <!-- Form Fields -->
+            <div id="form-fields" class="hidden">
+                <div class="section-header">Trauma and Injury Info</div>
                 <div class="form-group">
-                    <label for="SBP">ED Systolic Blood Pressure (SBP):</label>
-                    <input type="number" id="SBP" name="SBP" class="form-control">
+                    <label for="TRAUMATYPE">Trauma Type:</label>
+                    <select id="TRAUMATYPE" name="TRAUMATYPE" class="form-control">
+                        <option value="">Select</option>
+                        <option value="Blunt">Blunt</option>
+                        <option value="Penetrating">Penetrating</option>
+                        <option value="Burn">Burn</option>
+                        <option value="Other/unspecified">Other/unspecified</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label for="PULSERATE">ED Pulse Rate:</label>
-                    <input type="number" id="PULSERATE" name="PULSERATE" class="form-control">
+                    <label for="MECHANISM">Mechanism:</label>
+                    <select id="MECHANISM" name="MECHANISM" class="form-control">
+                        <option value="">Select</option>
+                        <option value="0">MVT Occupant</option>
+                        <option value="1">MVT Pedestrian</option>
+                        <option value="2">Firearm</option>
+                        <option value="3">Cut/pierce</option>
+                        <option value="4">MVT Motorcyclist</option>
+                        <option value="5">Transport, other</option>
+                        <option value="6">Unspecified</option>
+                        <option value="7">Fall</option>
+                        <option value="8">Other specified and classifiable</option>
+                        <option value="9">Machinery</option>
+                        <option value="10">Struck by, against</option>
+                        <option value="11">Natural/environmental, Other</option>
+                        <option value="12">Pedal cyclist, other</option>
+                        <option value="13">MVT Unspecified</option>
+                        <option value="14">MVT Pedal cyclist</option>
+                        <option value="15">Pedestrian, other</option>
+                        <option value="16">Unknown</option>
+                        <option value="17">MVT Other</option>
+                        <option value="18">Other specified, not elsewhere classifiable</option>
+                        <option value="19">Poisoning</option>
+                        <option value="20">Adverse effects, medical care</option>
+                        <option value="21">Fire/flame</option>
+                        <option value="22">Suffocation</option>
+                        <option value="23">Natural/environmental, Bites and stings</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label for="RESPIRATORYRATE">ED Respiratory Rate:</label>
-                    <input type="number" id="RESPIRATORYRATE" name="RESPIRATORYRATE" class="form-control">
+                    <label for="PREHOSPITALCARDIACARREST">Prehospital Cardiac Arrest:</label>
+                    <select id="PREHOSPITALCARDIACARREST" name="PREHOSPITALCARDIACARREST" class="form-control">
+                        <option value="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <div class="section-header">Patient Demographics</div>
+                <div class="form-group">
+                    <label for="SEX">Sex:</label>
+                    <select id="SEX" name="SEX" class="form-control">
+                        <option value="">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
                 </div>
                 <div class="form-group">
-                    <label for="TOTALGCS">ED Total Glasgow Coma Scale (GCS):</label>
-                    <input type="number" id="TOTALGCS" name="TOTALGCS" class="form-control">
+                    <label for="AGEYEARS">Age (Years):</label>
+                    <input type="number" id="AGEYEARS" name="AGEYEARS" class="form-control" value="">
                 </div>
-                <div class="form-group">
-                    <label for="TEMPERATURE">ED Temperature:</label>
-                    <input type="number" id="TEMPERATURE" name="TEMPERATURE" class="form-control">
+
+                <div class="section-header">Vital Signs and GCS</div>
+                <div id="vitals">
+                    <!-- EMS fields -->
+                    <div class="form-group EMS hidden">
+                        <label for="EMSSBP">EMS Systolic Blood Pressure (SBP):</label>
+                        <input type="number" id="EMSSBP" name="EMSSBP" class="form-control" value="">
+                    </div>
+                    <div class="form-group EMS hidden">
+                        <label for="EMSPULSERATE">EMS Pulse Rate:</label>
+                        <input type="number" id="EMSPULSERATE" name="EMSPULSERATE" class="form-control" value="">
+                    </div>
+                    <div class="form-group EMS hidden">
+                        <label for="EMSRESPIRATORYRATE">EMS Respiratory Rate:</label>
+                        <input type="number" id="EMSRESPIRATORYRATE" name="EMSRESPIRATORYRATE" class="form-control" value="">
+                    </div>
+                    <div class="form-group EMS hidden">
+                        <label for="EMSTOTALGCS">EMS Total Glasgow Coma Scale (GCS):</label>
+                        <input type="number" id="EMSTOTALGCS" name="EMSTOTALGCS" class="form-control" value="">
+                    </div>
+
+                    <!-- ED fields -->
+                    <div class="form-group ED hidden">
+                        <label for="SBP">Systolic Blood Pressure (SBP):</label>
+                        <input type="number" id="SBP" name="SBP" class="form-control" value="">
+                    </div>
+                    <div class="form-group ED hidden">
+                        <label for="PULSERATE">Pulse Rate:</label>
+                        <input type="number" id="PULSERATE" name="PULSERATE" class="form-control" value="">
+                    </div>
+                    <div class="form-group ED hidden">
+                        <label for="RESPIRATORYRATE">Respiratory Rate:</label>
+                        <input type="number" id="RESPIRATORYRATE" name="RESPIRATORYRATE" class="form-control" value="">
+                    </div>
+                    <div class="form-group ED hidden">
+                        <label for="TOTALGCS">Total Glasgow Coma Scale (GCS):</label>
+                        <input type="number" id="TOTALGCS" name="TOTALGCS" class="form-control" value="">
+                    </div>
+                    <div class="form-group ED hidden">
+                        <label for="TEMPERATURE">Temperature:</label>
+                        <input type="number" id="TEMPERATURE" name="TEMPERATURE" class="form-control" value="">
+                    </div>
+
+                    <!-- EMS + ED fields -->
+                    <div class="row EMS_ED hidden">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="EMSSBP">EMS Systolic Blood Pressure (SBP):</label>
+                                <input type="number" id="EMSSBP" name="EMSSBP" class="form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="EMSPULSERATE">EMS Pulse Rate:</label>
+                                <input type="number" id="EMSPULSERATE" name="EMSPULSERATE" class="form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="EMSTOTALGCS">EMS Total Glasgow Coma Scale (GCS):</label>
+                                <input type="number" id="EMSTOTALGCS" name="EMSTOTALGCS" class="form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="EMSRESPIRATORYRATE">EMS Respiratory Rate:</label>
+                                <input type="number" id="EMSRESPIRATORYRATE" name="EMSRESPIRATORYRATE" class="form-control" value="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="SBP">Systolic Blood Pressure (SBP):</label>
+                                <input type="number" id="SBP" name="SBP" class="form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="PULSERATE">Pulse Rate:</label>
+                                <input type="number" id="PULSERATE" name="PULSERATE" class="form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="TOTALGCS">Total Glasgow Coma Scale (GCS):</label>
+                                <input type="number" id="TOTALGCS" name="TOTALGCS" class="form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="RESPIRATORYRATE">Respiratory Rate:</label>
+                                <input type="number" id="RESPIRATORYRATE" name="RESPIRATORYRATE" class="form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="TEMPERATURE">Temperature:</label>
+                                <input type="number" id="TEMPERATURE" name="TEMPERATURE" class="form-control" value="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="result alert" id="result"></div>
+
+            <button type="submit" class="btn btn-primary btn-block hidden"><i class="fas fa-stethoscope"></i> Predict</button>
         </form>
+        <div class="result alert" id="result"></div>
         <div class="qr-code">
             <h2>Scan the QR code to visit the website:</h2>
             <img src="/generate_qr" alt="QR Code">
@@ -215,17 +312,45 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#data_type').on('change', function() {
-                if ($(this).val() == 'EMS_ED' || $(this).val() == 'ED') {
-                    $('#ed-fields').show();
-                } else {
-                    $('#ed-fields').hide();
+            function updateFormFields() {
+                const selectedType = $('#DATA_TYPE').val();
+                $('.form-group.ED, .form-group.EMS, .row.EMS_ED').addClass('hidden');
+                if (selectedType === 'EMS') {
+                    $('.form-group.EMS').removeClass('hidden');
+                } else if (selectedType === 'ED') {
+                    $('.form-group.ED').removeClass('hidden');
+                } else if (selectedType === 'EMS + ED') {
+                    $('.row.EMS_ED').removeClass('hidden');
                 }
+            }
+
+            function checkFormFields() {
+                if ($('#MODEL_TYPE').val() && ($('#MODEL_TYPE').val() !== 'logistic_regression' || $('#PENALTY').val()) && $('#DATA_TYPE').val()) {
+                    $('#form-fields, .btn-primary').removeClass('hidden');
+                } else {
+                    $('#form-fields, .btn-primary').addClass('hidden');
+                }
+            }
+
+            $('#MODEL_TYPE').on('change', function() {
+                if ($(this).val() === 'logistic_regression') {
+                    $('#penalty-group').show();
+                } else {
+                    $('#penalty-group').hide();
+                }
+                checkFormFields();
             });
 
-            $('#predictionForm input, #predictionForm select').on('change', function(event) {
+            $('#PENALTY, #DATA_TYPE').on('change', function() {
+                checkFormFields();
+                updateFormFields();
+            });
+
+            checkFormFields(); // Ensure correct fields are shown on initial load
+
+            $('#predictionForm').on('submit', function(event) {
                 event.preventDefault();
-                var formData = $('#predictionForm').serialize();
+                var formData = $(this).serialize();
                 $.ajax({
                     url: '/predict',
                     method: 'POST',
@@ -236,12 +361,7 @@
                             resultDiv.text(response.error);
                             resultDiv.removeClass('alert-success').addClass('alert-danger');
                         } else {
-                            resultDiv.html(`
-                                ${response.result} (Confidence: ${response.confidence.toFixed(2)}%)<br>
-                                AUROC: ${response.AUROC.toFixed(2)}<br>
-                                Samples Used: ${response.samples_used}<br>
-                                Accuracy: ${response.accuracy.toFixed(2)}%
-                            `);
+                            resultDiv.html(response.result + " (Confidence: " + response.confidence.toFixed(2) + "%)");
                             if (response.result === 'Survived') {
                                 resultDiv.removeClass('alert-danger').addClass('alert-success');
                             } else {

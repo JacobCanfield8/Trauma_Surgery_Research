@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About - RTcotomy ML</title>
+    <title>RTcotomy ML - About</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             background-color: #e9ecef;
@@ -17,36 +18,53 @@
         }
         .header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         .header h1 {
             color: #dc3545;
             font-size: 2.5rem;
         }
-        .nav-link {
-            font-size: 1.25rem;
-            color: #007bff;
+        .nav-bar {
+            background-color: #dc3545;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
         }
-        .nav-link:hover {
-            text-decoration: underline;
+        .nav-bar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.25rem;
+        }
+        .nav-bar a:hover {
+            text-decoration: underline.
+        }
+        .content {
+            font-size: 1.25rem;
+            color: #333.
+        }
+        .content img {
+            max-width: 100%;
+            margin-bottom: 20px.
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>About RTcotomy ML</h1>
-            <p class="lead">Learn more about the RTcotomy ML project and its mission.</p>
+            <img src="https://www.ifsa.org/wp-content/uploads/2024/05/Cook-County-Trauma-Burn-Stroger-1024x566.png" alt="Trauma Surgery and Burn Unit" class="img-header">
+            <h1><i class="fas fa-heartbeat"></i> About RTcotomy ML</h1>
         </div>
-        <nav>
-            <a href="/" class="nav-link">Home</a> |
-            <a href="/about" class="nav-link">About</a> |
-            <a href="/contact" class="nav-link">Contact</a>
-        </nav>
-        <hr>
-        <div>
-            <h2>About This Project</h2>
-            <p>RTcotomy ML is a machine learning project aimed at predicting outcomes of resuscitative thoracotomy for trauma and critical care. This is accomplished by utilizing data from the National Trauma Data Bank (NTDB) also known as the Trauma Quality Improvement Program (TQIP) from the Americal College of Surgeons (ACS). Documentation for the algorithms and source code does not currently exist publicly as it has not been peer reviewed. It should be noted that this is an ongoing project and SHOULD NOT be used to make medical decisions at this time. </p>
+        <div class="nav-bar">
+			<a href="/rtcotomyml">RTcotomyML</a>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <div class="content">
+            <p>RTcotomy ML is a cutting-edge tool designed to assist medical professionals in predicting the outcomes of resuscitative thoracotomy for trauma and critical care patients. By leveraging advanced machine learning algorithms, our tool provides accurate predictions based on comprehensive data.</p>
+            <p>Our mission is to improve patient outcomes by providing reliable predictions that help inform clinical decisions. We believe that access to accurate, data-driven predictions can make a significant difference in trauma care.</p>
+            <p>Learn more about our work and the technology behind RTcotomy ML by exploring our tool and resources. If you have any questions or need more information, please don't hesitate to reach out to us through our Contact page.</p>
         </div>
     </div>
 </body>

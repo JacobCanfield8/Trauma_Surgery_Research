@@ -1,0 +1,13 @@
+steps = """
+1. Open Terminal.
+2. Navigate to your project directory:
+   cd /path/to/YourProject
+3. Start ngrok:
+   ngrok start --config ~/.ngrok2/ngrok.yml my-tunnel
+4. Run the start_app.sh script:
+   sudo ./start_app.sh
+"""
+
+with open("/mnt/data/Flask_Gunicorn_ngrok_Startup_Guide.txt", "w") as file:
+    file.write(steps)
+

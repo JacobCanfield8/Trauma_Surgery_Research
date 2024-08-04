@@ -39,7 +39,7 @@ TRAUMA_all_df = TRAUMA_all_df.drop(columns=['EDDISCHARGEDISPOSITION', 'HOSPDISCH
 
 # Step 5: Select columns of interest
 EMS_list = ['SEX', 'AGEYEARS', 'EMSSBP', 'EMSPULSERATE', 'EMSRESPIRATORYRATE', 'EMSTOTALGCS', 'PREHOSPITALCARDIACARREST', 'TRAUMATYPE', 'MECHANISM']
-ED_list = ['SEX', 'AGEYEARS', 'SBP', 'PULSERATE', 'RESPIRATORYRATE', 'TOTALGCS', 'PREHOSPITALCARDIACARREST', 'TRAUMATYPE', 'MECHANISM']
+ED_list = ['SEX', 'AGEYEARS', 'SBP', 'PULSERATE', 'RESPIRATORYRATE', 'TOTALGCS', 'PREHOSPITALCARDIACARREST', 'TRAUMATYPE', 'MECHANISM', 'TEMPERATURE']
 EMS_ED_list = ['SEX', 'AGEYEARS', 'EMSSBP', 'EMSPULSERATE', 'EMSRESPIRATORYRATE', 'EMSTOTALGCS', 'SBP', 'PULSERATE', 'RESPIRATORYRATE', 'TOTALGCS', 'TEMPERATURE', 'PREHOSPITALCARDIACARREST', 'TRAUMATYPE', 'MECHANISM']
 
 feature_sets = {
@@ -63,10 +63,14 @@ for col in string_columns:
         'string_to_int': string_to_int,
         'int_to_string': int_to_string
     }
+print(TRAUMA_all_df['MECHANISM'])
+print(mapping_dicts)
+
+'''''
     
     # Map the strings to integers in the DataFrame
     TRAUMA_all_df[col] = TRAUMA_all_df[col].map(string_to_int)
-
+    
 def clean_data(X, y):
     before_drop = len(X)
     X = X.replace([np.inf, -np.inf], np.nan).dropna()
@@ -200,3 +204,4 @@ for data_type, features in feature_sets.items():
 
 results_df = pd.DataFrame(results, columns=['Data Type', 'Model Type', 'Features', 'Accuracy', 'AUROC', 'Samples Used'])
 results_df.to_csv('models/model_performance_metrics.csv', index=False)
+'''''
