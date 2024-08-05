@@ -63,10 +63,6 @@ for col in string_columns:
         'string_to_int': string_to_int,
         'int_to_string': int_to_string
     }
-print(TRAUMA_all_df['MECHANISM'])
-print(mapping_dicts)
-
-'''''
     
     # Map the strings to integers in the DataFrame
     TRAUMA_all_df[col] = TRAUMA_all_df[col].map(string_to_int)
@@ -204,4 +200,3 @@ for data_type, features in feature_sets.items():
 
 results_df = pd.DataFrame(results, columns=['Data Type', 'Model Type', 'Features', 'Accuracy', 'AUROC', 'Samples Used'])
 results_df.to_csv('models/model_performance_metrics.csv', index=False)
-'''''
