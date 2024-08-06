@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RTcotomy ML v0.0</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #e9ecef;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            color: #dc3545;
+            font-size: 2.5rem;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            border-radius: 5px;
+            height: 45px;
+            font-size: 1rem;
+        }
+        .btn-primary {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            font-size: 1.25rem;
+            padding: 10px;
+        }
+        .btn-primary:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+        .img-header {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            display: none;
+            font-size: 1.25rem;
+            text-align: center;
+        }
+        .alert-success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .alert-danger {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .qr-code {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .qr-code img {
+            max-width: 100%;
+        }
+        .nav-link {
+            font-size: 1.25rem;
+            color: #007bff;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://www.ifsa.org/wp-content/uploads/2024/05/Cook-County-Trauma-Burn-Stroger-1024x566.png" alt="Trauma Surgery and Burn Unit" class="img-header">
+            <h1><i class="fas fa-heartbeat"></i> RTcotomy ML v0.0</h1>
+            <p class="lead">Predicting outcomes of resuscitative thoracotomy for trauma and critical care.</p>
+        </div>
+        <nav>
+            <a href="/" class="nav-link">Home</a> |
+            <a href="/about" class="nav-link">About</a> |
+            <a href="/contact" class="nav-link">Contact</a>
+        </nav>
+        <hr>
+        <form id="predictionForm">
+            <div class="form-group">
+                <label for="SEX">Sex:</label>
+                <select id="SEX" name="SEX" class="form-control" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="EMSSBP">EMS Systolic Blood Pressure (SBP):</label>
+                <input type="number" id="EMSSBP" name="EMSSBP" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="EMSPULSERATE">EMS Pulse Rate:</label>
+                <input type="number" id="EMSPULSERATE" name="EMSPULSERATE" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="EMSRESPIRATORYRATE">EMS Respiratory Rate:</label>
+                <input type="number" id="EMSRESPIRATORYRATE" name="EMSRESPIRATORYRATE" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="EMSTOTALGCS">EMS Total Glasgow Coma Scale (GCS):</label>
+                <input type="number" id="EMSTOTALGCS" name="EMSTOTALGCS" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="PREHOSPITALCARDIACARREST">Prehospital Cardiac Arrest:</label>
+                <select id="PREHOSPITALCARDIACARREST" name="PREHOSPITALCARDIACARREST" class="form-control" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="TRAUMATYPE">Trauma Type:</label>
+                <select id="TRAUMATYPE" name="TRAUMATYPE" class="form-control" required>
+                    <option value="Blunt">Blunt</option>
+                    <option value="Penetrating">Penetrating</option>
+                    <option value="Burn">Burn</option>
+                    <option value="Other/unspecified">Other/unspecified</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block"><i class="fas fa-stethoscope"></i> Predict</button>
+        </form>
+        <div class="result alert" id="result"></div>
+        <div class="qr-code">
+            <h2>Scan the QR code to visit the website:</h2>
+            <img src="/generate_qr" alt="QR Code">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#predictionForm').on('submit', function(event) {
+                event.preventDefault();
+                var formData = $(this).serialize();
+                $.ajax({
+                    url: '/predict',
+                    method: 'POST',
+                    data: formData,
+                    success: function(response) {
+                        var resultDiv = $('#result');
+                        if (response.error) {
+                            resultDiv.text(response.error);
+                            resultDiv.removeClass('alert-success').addClass('alert-danger');
+                        } else {
+                            resultDiv.html(response.result + " (Confidence: " + response.confidence.toFixed(2) + "%)");
+                            if (response.result === 'Survived') {
+                                resultDiv.removeClass('alert-danger').addClass('alert-success');
+                            } else {
+                                resultDiv.removeClass('alert-success').addClass('alert-danger');
+                            }
+                        }
+                        resultDiv.show();
+                    },
+                    error: function() {
+                        $('#result').text('An error occurred while processing your request.').removeClass('alert-success').addClass('alert-danger').show();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
