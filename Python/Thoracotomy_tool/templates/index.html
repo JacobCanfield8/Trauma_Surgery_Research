@@ -40,9 +40,11 @@
             text-decoration: underline;
         }
         .instructions {
+            padding: 20px;
+            border-radius: 5px;
             margin-bottom: 20px;
             font-size: 1rem;
-            color: #333;
+            color: #721c24;
         }
         .form-group label {
             font-weight: bold;
@@ -106,16 +108,24 @@
             <p class="lead">Predicting outcomes of resuscitative thoracotomy for trauma and critical care.</p>
         </div>
         <div class="nav-bar">
-			<a href="/rtcotomyml">RTcotomyML</a>
             <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/contact">Contact</a>
         </div>
         <div class="instructions">
-            <p>Please select a Model Type and Data Type to reveal the remaining fields. If you select Logistic Regression, you will also have to select a penalty. After you that you will be provided several fields to input data. Once you have provided at least two data variables, a prediction can be made, but it should be noted that having more data fields filled in will lead to more reliable results and higher confidence in most instances (more information is always best). Confidence is a value that is equivalent to the assigned probability that the given model and parameters classified the outcome as its respective class (i.e. if the output is Deceased (Confidence: 75%), that would indicate that the machine learning model predicted the probability that this individual would expire if they were to receive a resuscitative thoracotomy within the first 20 minutes of arrival to the ED). Just to reiterate, in order to facilitate predictions in the absence of all of the input parameter, a separate model is trained for each combination of vitals, therefore the data fields you input inherently change the model being used, hence more input data results in a more reliable prediction both statistically and also in meaningfulness.</p>
+            <p>Please select a Model Type and Data Type to reveal the remaining fields. If you select Logistic Regression you will also have to select a penalty. After you that you will be provided several fields to input data. Once you have provided at least two data variables, a prediction can be made, but it should be noted that having more data fields filled in will lead to more reliable results and higher confidence in most instances (more information is always best). Confidence is a value that is equivalent to the assigned probability that the given model and parameters classified the outcome as its respective class (i.e. if the output is Deceased (Confidence: 75%), that would indicate that the machine learning model predicted the probability that this individual would expire if they were to receive a resuscitative thoracotomy within the first 20 minutes of arrival to the ED). Just to reiterate, in order to facilitate predictions in the absence of all of the input parameter, a separate model is trained for each combination of vitals, therefore the datafields you input inherently change the model being used, hence more input data results in a more reliable prediction both statistically and also in meaningfullness.</p>
         </div>
         <hr>
         <form id="predictionForm">
+            <div class="form-group">
+                <label for="VERSION">Model Version:</label>
+                <select id="VERSION" name="VERSION" class="form-control" required>
+                    <option value="">Select</option>
+                    <option value="v0.0">v0.0</option>
+                    <option value="v1.0">v1.0</option>
+                    <option value="v2.0">v2.0</option>
+                </select>
+            </div>
             <div class="section-header">Machine Learning Model Parameters and Data Features</div>
             <div class="form-group">
                 <label for="MODEL_TYPE">Model Type:</label>
@@ -134,7 +144,7 @@
                     <option value="elasticnet">Elastic Net</option>
                 </select>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="data-type-group">
                 <label for="DATA_TYPE">Data Type:</label>
                 <select id="DATA_TYPE" name="DATA_TYPE" class="form-control" required>
                     <option value="">Select</option>
@@ -157,7 +167,7 @@
                         <option value="Other/unspecified">Other/unspecified</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group" id="mechanism-group">
                     <label for="MECHANISM">Mechanism:</label>
                     <select id="MECHANISM" name="MECHANISM" class="form-control">
                         <option value="">Select</option>
@@ -248,7 +258,7 @@
                         <input type="number" id="TOTALGCS" name="TOTALGCS" class="form-control" value="">
                     </div>
                     <div class="form-group ED hidden">
-                        <label for="TEMPERATURE">Temperature:</label>
+                        <label for="TEMPERATURE">Temperature (C):</label>
                         <input type="number" id="TEMPERATURE" name="TEMPERATURE" class="form-control" value="">
                     </div>
 
@@ -290,7 +300,7 @@
                                 <input type="number" id="RESPIRATORYRATE" name="RESPIRATORYRATE" class="form-control" value="">
                             </div>
                             <div class="form-group">
-                                <label for="TEMPERATURE">Temperature:</label>
+                                <label for="TEMPERATURE">Temperature (C):</label>
                                 <input type="number" id="TEMPERATURE" name="TEMPERATURE" class="form-control" value="">
                             </div>
                         </div>
@@ -325,7 +335,21 @@
             }
 
             function checkFormFields() {
-                if ($('#MODEL_TYPE').val() && ($('#MODEL_TYPE').val() !== 'logistic_regression' || $('#PENALTY').val()) && $('#DATA_TYPE').val()) {
+                const selectedVersion = $('#VERSION').val();
+                if (selectedVersion === 'v0.0') {
+                    $('#data-type-group select').html('<option value="EMS">EMS</option>');
+                    $('#mechanism-group').hide();
+                } else {
+                    $('#data-type-group select').html(`
+                        <option value="">Select</option>
+                        <option value="EMS">EMS</option>
+                        <option value="ED">ED</option>
+                        <option value="EMS + ED">EMS + ED</option>
+                    `);
+                    $('#mechanism-group').show();
+                }
+
+                if ($('#MODEL_TYPE').val() && ($('#MODEL_TYPE').val() !== 'logistic_regression' || $('#PENALTY').val()) && ($('#DATA_TYPE').val() || selectedVersion === 'v0.0') && selectedVersion) {
                     $('#form-fields, .btn-primary').removeClass('hidden');
                 } else {
                     $('#form-fields, .btn-primary').addClass('hidden');
@@ -341,7 +365,7 @@
                 checkFormFields();
             });
 
-            $('#PENALTY, #DATA_TYPE').on('change', function() {
+            $('#PENALTY, #DATA_TYPE, #VERSION').on('change', function() {
                 checkFormFields();
                 updateFormFields();
             });

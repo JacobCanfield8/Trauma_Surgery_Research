@@ -1,11 +1,11 @@
 Starting application...
 Killing any process using port 8080...
 Starting Gunicorn...
-[2024-08-04 06:13:00 -0500] [60762] [INFO] Starting gunicorn 22.0.0
-[2024-08-04 06:13:00 -0500] [60762] [INFO] Listening at: http://0.0.0.0:8080 (60762)
-[2024-08-04 06:13:00 -0500] [60762] [INFO] Using worker: sync
-[2024-08-04 06:13:00 -0500] [60766] [INFO] Booting worker with pid: 60766
-Gunicorn started with PID 60762
+[2024-08-06 01:40:13 -0500] [90381] [INFO] Starting gunicorn 22.0.0
+[2024-08-06 01:40:13 -0500] [90381] [INFO] Listening at: http://0.0.0.0:8080 (90381)
+[2024-08-06 01:40:13 -0500] [90381] [INFO] Using worker: sync
+[2024-08-06 01:40:13 -0500] [90385] [INFO] Booting worker with pid: 90385
+Gunicorn started with PID 90381
 Nginx not running. Starting nginx...
 Service `nginx` already started, use `brew services restart nginx` to restart.
 nginx reloaded or started successfully.
