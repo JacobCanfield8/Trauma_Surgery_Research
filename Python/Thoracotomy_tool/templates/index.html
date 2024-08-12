@@ -147,7 +147,6 @@
             <div class="form-group" id="data-type-group">
                 <label for="DATA_TYPE">Data Type:</label>
                 <select id="DATA_TYPE" name="DATA_TYPE" class="form-control" required>
-                    <option value="">Select</option>
                     <option value="EMS">EMS</option>
                     <option value="ED">ED</option>
                     <option value="EMS + ED">EMS + ED</option>
@@ -167,7 +166,7 @@
                         <option value="Other/unspecified">Other/unspecified</option>
                     </select>
                 </div>
-                <div class="form-group" id="mechanism-group">
+                <div class="form-group" id="mechanism-group" style="display: none;">
                     <label for="MECHANISM">Mechanism:</label>
                     <select id="MECHANISM" name="MECHANISM" class="form-control">
                         <option value="">Select</option>
@@ -315,6 +314,29 @@
             <h2>Scan the QR code to visit the website:</h2>
             <img src="/generate_qr" alt="QR Code">
         </div>
+        
+        <!-- Feature selection form for plotting decision boundary -->
+        <div class="section-header">Plot Decision Boundary</div>
+        <form id="featureForm">
+            <div class="form-group">
+                <label for="x_feature">Select X Feature:</label>
+                <select id="x_feature" name="x_feature" class="form-control">
+                    <!-- Options will be dynamically populated based on the selected model version and data type -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="y_feature">Select Y Feature:</label>
+                <select id="y_feature" name="y_feature" class="form-control">
+                    <!-- Options will be dynamically populated based on the selected model version and data type -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Plot</button>
+        </form>
+
+        <!-- Canvas to display the plot -->
+        <div id="plot-container">
+            <img id="plot" src="" alt="Decision Boundary Plot">
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -336,18 +358,72 @@
 
             function checkFormFields() {
                 const selectedVersion = $('#VERSION').val();
+                const selectedDataType = $('#DATA_TYPE').val();
+                let featureOptions = [];
+
                 if (selectedVersion === 'v0.0') {
-                    $('#data-type-group select').html('<option value="EMS">EMS</option>');
+                    featureOptions = [
+                        { value: 'AGEYEARS', text: 'Age (Years)' },
+                        { value: 'SEX', text: 'Sex' },
+                        { value: 'TRAUMATYPE', text: 'Trauma Type' },
+                        { value: 'PREHOSPITALCARDIACARREST', text: 'Prehospital Cardiac Arrest' },
+                        { value: 'EMSSBP', text: 'EMS Systolic Blood Pressure (SBP)' },
+                        { value: 'EMSPULSERATE', text: 'EMS Pulse Rate' },
+                        { value: 'EMSRESPIRATORYRATE', text: 'EMS Respiratory Rate' },
+                        { value: 'EMSTOTALGCS', text: 'EMS Total Glasgow Coma Scale (GCS)' }
+                    ];
+                    $('#data-type-group').hide();
                     $('#mechanism-group').hide();
                 } else {
-                    $('#data-type-group select').html(`
-                        <option value="">Select</option>
-                        <option value="EMS">EMS</option>
-                        <option value="ED">ED</option>
-                        <option value="EMS + ED">EMS + ED</option>
-                    `);
+                    $('#data-type-group').show();
+                    if (selectedDataType === 'EMS') {
+                        featureOptions = [
+                            { value: 'AGEYEARS', text: 'Age (Years)' },
+                            { value: 'SEX', text: 'Sex' },
+                            { value: 'TRAUMATYPE', text: 'Trauma Type' },
+                            { value: 'PREHOSPITALCARDIACARREST', text: 'Prehospital Cardiac Arrest' },
+                            { value: 'EMSSBP', text: 'EMS Systolic Blood Pressure (SBP)' },
+                            { value: 'EMSPULSERATE', text: 'EMS Pulse Rate' },
+                            { value: 'EMSRESPIRATORYRATE', text: 'EMS Respiratory Rate' },
+                            { value: 'EMSTOTALGCS', text: 'EMS Total Glasgow Coma Scale (GCS)' }
+                        ];
+                    } else if (selectedDataType === 'ED') {
+                        featureOptions = [
+                            { value: 'AGEYEARS', text: 'Age (Years)' },
+                            { value: 'SEX', text: 'Sex' },
+                            { value: 'TRAUMATYPE', text: 'Trauma Type' },
+                            { value: 'PREHOSPITALCARDIACARREST', text: 'Prehospital Cardiac Arrest' },
+                            { value: 'SBP', text: 'Systolic Blood Pressure (SBP)' },
+                            { value: 'PULSERATE', text: 'Pulse Rate' },
+                            { value: 'RESPIRATORYRATE', text: 'Respiratory Rate' },
+                            { value: 'TOTALGCS', text: 'Total Glasgow Coma Scale (GCS)' },
+                            { value: 'TEMPERATURE', text: 'Temperature (C)' }
+                        ];
+                    } else if (selectedDataType === 'EMS + ED') {
+                        featureOptions = [
+                            { value: 'AGEYEARS', text: 'Age (Years)' },
+                            { value: 'SEX', text: 'Sex' },
+                            { value: 'TRAUMATYPE', text: 'Trauma Type' },
+                            { value: 'PREHOSPITALCARDIACARREST', text: 'Prehospital Cardiac Arrest' },
+                            { value: 'EMSSBP', text: 'EMS Systolic Blood Pressure (SBP)' },
+                            { value: 'EMSPULSERATE', text: 'EMS Pulse Rate' },
+                            { value: 'EMSRESPIRATORYRATE', text: 'EMS Respiratory Rate' },
+                            { value: 'EMSTOTALGCS', text: 'EMS Total Glasgow Coma Scale (GCS)' },
+                            { value: 'SBP', text: 'Systolic Blood Pressure (SBP)' },
+                            { value: 'PULSERATE', text: 'Pulse Rate' },
+                            { value: 'RESPIRATORYRATE', text: 'Respiratory Rate' },
+                            { value: 'TOTALGCS', text: 'Total Glasgow Coma Scale (GCS)' },
+                            { value: 'TEMPERATURE', text: 'Temperature (C)' },
+                            { value: 'MECHANISM', text: 'Mechanism' }
+                        ];
+                    }
                     $('#mechanism-group').show();
                 }
+
+                $('#x_feature, #y_feature').empty();
+                featureOptions.forEach(option => {
+                    $('#x_feature, #y_feature').append(`<option value="${option.value}">${option.text}</option>`);
+                });
 
                 if ($('#MODEL_TYPE').val() && ($('#MODEL_TYPE').val() !== 'logistic_regression' || $('#PENALTY').val()) && ($('#DATA_TYPE').val() || selectedVersion === 'v0.0') && selectedVersion) {
                     $('#form-fields, .btn-primary').removeClass('hidden');
@@ -396,6 +472,37 @@
                     },
                     error: function() {
                         $('#result').text('An error occurred while processing your request.').removeClass('alert-success').addClass('alert-danger').show();
+                    }
+                });
+            });
+
+            $('#featureForm').on('submit', function(event) {
+                event.preventDefault();
+
+                const xFeature = $('#x_feature').val();
+                const yFeature = $('#y_feature').val();
+
+                $.ajax({
+                    url: '/plot',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        x_index: xFeature,
+                        y_index: yFeature,
+                        version: $('#VERSION').val(),
+                        model_type: $('#MODEL_TYPE').val(),
+                        penalty: $('#PENALTY').val(),
+                        data_type: $('#DATA_TYPE').val()
+                    }),
+                    xhrFields: {
+                        responseType: 'blob'
+                    },
+                    success: function(response) {
+                        const url = window.URL.createObjectURL(new Blob([response]));
+                        $('#plot').attr('src', url);
+                    },
+                    error: function() {
+                        alert('An error occurred while updating the plot.');
                     }
                 });
             });

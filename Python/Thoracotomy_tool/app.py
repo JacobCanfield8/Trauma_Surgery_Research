@@ -1,8 +1,10 @@
 import os
-from flask import Flask, request, render_template, jsonify, send_from_directory
+from flask import Flask, request, render_template, jsonify, send_from_directory, send_file
 import joblib
 import numpy as np
 import qrcode
+import matplotlib.pyplot as plt
+from io import BytesIO
 
 app = Flask(__name__)
 
@@ -15,6 +17,10 @@ trauma_mapping = {
     'Burn': 3,
     'Other/unspecified': 4
 }
+mechanism_mapping = {str(i): i for i in range(24)}  # Assuming mechanisms are 0 to 23
+
+# Load precomputed decision boundaries
+decision_boundaries = joblib.load('decision_boundaries.pkl')
 
 @app.route('/')
 def home():
@@ -112,6 +118,8 @@ def predict_v1_v2(version):
             input_data_dict['TEMPERATURE'] = int(request.form['TEMPERATURE'])
         if 'AGEYEARS' in request.form and request.form['AGEYEARS']:
             input_data_dict['AGEYEARS'] = int(request.form['AGEYEARS'])
+        if 'MECHANISM' in request.form and request.form['MECHANISM']:
+            input_data_dict['MECHANISM'] = mechanism_mapping[request.form['MECHANISM']]
 
         # Ensure at least 2 features are provided
         if len(input_data_dict) < 2:
@@ -173,6 +181,47 @@ def predict_v1_v2(version):
         return jsonify({'result': result, 'confidence': confidence})
     except Exception as e:
         error_message = f"An error occurred: {str(e)}"
+        print(error_message)
+        return jsonify({'error': error_message})
+
+@app.route('/plot', methods=['POST'])
+def plot():
+    try:
+        data = request.json
+        version = data['version']
+        data_type = data['data_type']
+        model_type = data['model_type']
+        x_feature = data['x_index']
+        y_feature = data['y_index']
+        penalty = data.get('penalty', '')
+
+        # Determine the key for decision boundaries
+        if model_type == 'xgb':
+            key = (version, data_type, 'xgb', x_feature, y_feature)
+        else:
+            key = (version, data_type, f'logistic_regression_{penalty}', x_feature, y_feature)
+
+        # Check if the decision boundary for the selected feature pair exists
+        if key in decision_boundaries:
+            boundary = decision_boundaries[key]
+            xx = boundary['xx']
+            yy = boundary['yy']
+            Z = boundary['Z']
+        else:
+            return jsonify({'error': 'No precomputed decision boundary for the selected features.'})
+
+        # Plot the decision boundary
+        plt.figure(figsize=(10, 6))
+        plt.contourf(xx, yy, Z, alpha=0.8)
+        plt.colorbar()
+
+        # Convert plot to image
+        buf = BytesIO()
+        plt.savefig(buf, format='png')
+        buf.seek(0)
+        return send_file(buf, mimetype='image/png')
+    except Exception as e:
+        error_message = f"An error occurred while plotting: {str(e)}"
         print(error_message)
         return jsonify({'error': error_message})
 
